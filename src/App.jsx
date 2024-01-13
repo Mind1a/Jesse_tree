@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom"
 import { Home, Educators, About, Error } from "./routes"
+import "./scss/style.scss"
 
 const App = () => {
   return (
