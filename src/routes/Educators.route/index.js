@@ -1,1 +1,0 @@
-export { Educators } from "./Educators"

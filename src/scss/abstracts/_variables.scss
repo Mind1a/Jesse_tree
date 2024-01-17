@@ -1,0 +1,29 @@
+:root {
+  --clr-white-1: #ffffff;
+
+  --clr-blue-1: #9cb8dc;
+  --clr-blue-2: #002742;
+
+  --clr-gray-1: #e0e1e3;
+  --clr-gray-2: #d9dadc;
+  --clr-gray-3: #acacac;
+  --clr-gray-4: #707070;
+
+  // text
+  --clr-text-1: var(--clr-gray-4);
+  --clr-text-2: var(--clr-blue-2);
+
+  // font
+  --f-size: 1rem;
+  --f-size-1: 1.813rem; // 29px
+  --f-size-2: 2rem; // 32px
+  --f-size-3: 2.625rem; // 42px
+
+  // elements
+  --clr-body-bg: var(--clr-white-1);
+  --clr-navbar-bg: var(--clr-gray-1);
+  --f-size-navbar: var(--f-size-2);
+
+  --page-width: 100rem; //1600px
+  --main-page-width: 108rem; //1728px
+}
