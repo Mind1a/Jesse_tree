@@ -1,0 +1,33 @@
+.hero {
+  max-width: var(--page-width);
+  margin: 10rem auto;
+  padding: 0px 2rem;
+
+  .scroll {
+    width: fit-content;
+    margin: 5rem auto;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+
+  h1 {
+    width: 35rem;
+    text-align: right;
+    font-size: 8rem;
+    line-height: 8rem;
+  }
+
+  .text {
+    font-size: var(--f-size-1);
+    color: var(--clr-text-1);
+    line-height: 2.6rem;
+    width: 56rem;
+    p:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@mixin card(
+  $border-color,
+  $border-size,
+  $heading-size,
+  $subheading-size,
+  $illustration-size,
+  $hover-enabled: true
+) {
+  border: solid $border-color $border-size;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+
+  .heading {
+    position: absolute;
+    font-family: "Sandro-Universal-Bold";
+    font-size: $heading-size;
+    color: var(--clr-blue-2);
+    padding: 0.3rem 0.6rem;
+    z-index: 999;
+    transition: transform 0.3s ease-out;
+    white-space: pre-line;
+
+    @if $hover-enabled {
+      &:has(+ .illustration:hover) {
+        transform: scale(1.02);
+      }
+    }
+  }
+
+  .illustration {
+    display: block;
+    width: $illustration-size;
+    height: $illustration-size;
+    transition: transform 0.3s ease-out;
+
+    @if $hover-enabled {
+      &:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .subheading {
+    position: absolute;
+    right: 0;
+    padding: 0.6rem;
+    color: var(--clr-blue-2);
+    font-size: $subheading-size;
+  }
+}

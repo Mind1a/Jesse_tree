@@ -1,0 +1,4 @@
+@use "../../scss/abstracts/mixins" as *;
+.card {
+  @include card(var(--clr-white-1), 3rem, 2.7rem, 1.4rem, 25.6rem, ture);
+}
