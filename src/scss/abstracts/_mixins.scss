@@ -45,8 +45,21 @@
   .subheading {
     position: absolute;
     right: 0;
-    padding: 0.6rem;
+    padding-top: $border-size / 4;
     color: var(--clr-blue-2);
     font-size: $subheading-size;
+    font-family: "MyriadPro-Regular";
+  }
+}
+
+@mixin aboutEducatorsLayout {
+  max-width: var(--page-width);
+  margin: 8.3rem auto;
+  font-size: var(--f-size-2);
+  line-height: 2.5rem;
+  color: var(--clr-text-2);
+
+  p:not(:last-child) {
+    margin-bottom: 3rem;
   }
 }

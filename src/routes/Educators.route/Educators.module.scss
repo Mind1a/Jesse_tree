@@ -1,0 +1,5 @@
+@use "../../scss/abstracts/mixins" as *;
+
+.main {
+  @include aboutEducatorsLayout;
+}
