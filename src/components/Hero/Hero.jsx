@@ -25,7 +25,7 @@ const Hero = () => {
       </div>
 
       <div className={styles.scroll}>
-        <a href="#main-cards">SCROLL</a>
+        <a href="#cards">SCROLL</a>
       </div>
     </section>
   )

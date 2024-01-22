@@ -1,4 +1,12 @@
 @use "../../scss/abstracts/mixins" as *;
-.card {
+.card_main {
   @include card(var(--clr-white-1), 3rem, 2.7rem, 1.4rem, 25.6rem, ture);
+}
+
+.card_individual_active {
+  @include card(var(--clr-gray-1), 4.8rem, 4.5rem, 2.3rem, 41.4rem, false);
+}
+
+.card_individual_side {
+  @include card(var(--clr-gray-1), 1rem, 0.75rem, 0.4rem, 6.75rem, false);
 }

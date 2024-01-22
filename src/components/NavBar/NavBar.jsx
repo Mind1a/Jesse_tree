@@ -17,7 +17,7 @@ const NavBar = () => {
 export default NavBar
 
 const Logo = () => {
-  return <img className={styles.logo} src="src\assets\react.svg" />
+  return <img className={styles.logo} src="\src\assets\react.svg" />
 }
 
 const NavMenu = () => {
@@ -32,7 +32,7 @@ const NavMenu = () => {
         </NavLink>
       </div>
       <div className={styles.link}>
-        <HashLink to="/#main-cards">Jesse Tree Readings</HashLink>
+        <HashLink to="/#cards">Jesse Tree Readings</HashLink>
       </div>
       <div className={styles.link}>
         <NavLink
