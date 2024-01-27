@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom"
+import { HashLink } from "react-router-hash-link"
 import styles from "./NavBar.module.scss"
 
 const NavBar = () => {
@@ -16,7 +17,7 @@ const NavBar = () => {
 export default NavBar
 
 const Logo = () => {
-  return <img className={styles.logo} src="src\assets\react.svg" />
+  return <img className={styles.logo} src="/assets/icons/logo.svg" />
 }
 
 const NavMenu = () => {
@@ -31,7 +32,7 @@ const NavMenu = () => {
         </NavLink>
       </div>
       <div className={styles.link}>
-        <NavLink to="/">Jesse Tree Readings</NavLink>
+        <HashLink to="/#cards">Jesse Tree Readings</HashLink>
       </div>
       <div className={styles.link}>
         <NavLink
