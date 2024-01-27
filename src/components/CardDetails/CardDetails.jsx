@@ -1,30 +1,40 @@
 import { useParams } from "react-router-dom"
-import { useState } from "react"
+import { useMemo, useState } from "react"
 import { Card } from "../Card/"
 import { getStoryDetailsByheading, paramToHeading } from "../../utils"
 import styles from "./CardDetails.module.scss"
 
 const CardDetails = () => {
   return (
-    <main className={styles.main}>
-      <IllustrationsDisplay />
-      <TextDisplay />
-    </main>
+    <>
+      <main className={styles.main}>
+        <IllustrationsDisplay />
+        <TextDisplay />
+      </main>
+    </>
   )
 }
 
 const IllustrationsDisplay = () => {
   let { stories, story } = useParams()
 
-  const storyDetails = getStoryDetailsByheading(
-    paramToHeading(stories),
-    paramToHeading(story)
-  )
+  const storyDetails = useMemo(() => {
+    return getStoryDetailsByheading(
+      paramToHeading(stories),
+      paramToHeading(story)
+    )
+  }, [stories, story])
 
-  const [Image, setImage] = useState(storyDetails.illustrations[0])
+  const [Image, setImage] = useState({
+    src: storyDetails.illustrations[0],
+    idx: 0,
+  })
 
-  const handleImageClick = (illustration) => {
-    setImage(illustration)
+  const handleImageClick = (illustration, index) => {
+    setImage({
+      src: illustration,
+      idx: index,
+    })
   }
 
   return (
@@ -33,34 +43,42 @@ const IllustrationsDisplay = () => {
         <Card
           heading={storyDetails.heading}
           subheading={storyDetails.subheading}
-          illustration={[Image]}
-          card="card_individual_active"
+          illustration={[Image.src]}
+          card={
+            Image.idx === 0 || Image.idx === 1
+              ? "card_individual_active_2"
+              : "card_individual_active"
+          }
         />
       </div>
 
       <div className={styles.side}>
-        {storyDetails.illustrations.map((illustration) => {
+        {storyDetails.illustrations.map((illustration, index) => {
           return (
             <div
               key={illustration}
               className={`${styles.illustration} ${
-                illustration == Image ? styles.activeSideImage : ""
+                illustration == Image.src ? styles.activeSideImage : ""
               }`}
-              onClick={() => handleImageClick(illustration)}
+              onClick={() => handleImageClick(illustration, index)}
             >
               <Card
                 heading={storyDetails.heading}
                 subheading={storyDetails.subheading}
                 illustration={illustration}
-                card="card_individual_side"
+                card={
+                  index === 0 || index === 1
+                    ? "card_individual_side_2"
+                    : "card_individual_side"
+                }
               />
             </div>
           )
         })}
 
         <div className={styles.actions}>
-          <div className={styles.print}>P</div>
-          <div className={styles.download}>D</div>
+          <img src="/assets/icons/print.svg" className={styles.print} />
+          <img src="/assets/icons/download.svg" className={styles.download} />
         </div>
       </div>
     </section>

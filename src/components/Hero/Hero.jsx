@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.wrapper}>
-        <h1>ADVENT READING FOR THE JESSE TREE</h1>
+        <img src="/assets/icons/advent.svg" />
         <div className={styles.text}>
           <p>
             Christmas is a special time. Every year, we celebrate the birth of
@@ -25,7 +25,9 @@ const Hero = () => {
       </div>
 
       <div className={styles.scroll}>
-        <a href="#cards">SCROLL</a>
+        <a href="#cards">
+          <img src="/assets/icons/arrow.svg" />
+        </a>
       </div>
     </section>
   )

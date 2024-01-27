@@ -17,7 +17,7 @@ const NavBar = () => {
 export default NavBar
 
 const Logo = () => {
-  return <img className={styles.logo} src="\src\assets\react.svg" />
+  return <img className={styles.logo} src="/assets/icons/logo.svg" />
 }
 
 const NavMenu = () => {

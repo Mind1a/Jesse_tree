@@ -18,7 +18,7 @@ const Cards = () => {
               >
                 <Card
                   heading={story.heading}
-                  subheading={story.subheading}
+                  subheading=""
                   illustration={story.illustration}
                   card="card_main"
                 />

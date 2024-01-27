@@ -16,7 +16,7 @@ export const getStoryDetailsByheading = (storiesHeading, storyHeading) => {
   const path = `/assets/images/card/${headingToParam(storyHeading)}`
   const illustrations = Array.from(
     { length: 4 },
-    (_, index) => `${path}/${index + 1}.jpg`
+    (_, index) => `${path}/${index + 1}.svg`
   )
 
   storyObj = {

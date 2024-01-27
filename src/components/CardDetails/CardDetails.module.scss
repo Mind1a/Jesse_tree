@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   gap: 3.5rem;
-
   .text {
     font-size: var(--f-size-1);
     color: var(--clr-gray-4);
@@ -16,7 +15,7 @@
 .illustrations {
   display: flex;
   gap: 0.5rem;
-  max-height: 51rem;
+  height: fit-content;
 
   .activeImageDisplay {
     .active {
@@ -57,6 +56,8 @@
         width: 4.8rem;
         height: 4.8rem;
         background-color: var(--clr-gray-1);
+
+        padding: 0.7rem;
       }
     }
   }

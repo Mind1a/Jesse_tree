@@ -4,11 +4,13 @@
   $heading-size,
   $subheading-size,
   $illustration-size,
-  $hover-enabled: true
+  $hover-enabled: true,
+  $inner-border: true
 ) {
   border: solid $border-color $border-size;
-  width: fit-content;
-  height: fit-content;
+
+  width: $illustration-size;
+  height: $illustration-size;
   position: relative;
 
   .heading {
@@ -16,7 +18,8 @@
     font-family: "Sandro-Universal-Bold";
     font-size: $heading-size;
     color: var(--clr-blue-2);
-    padding: 0.3rem 0.6rem;
+    padding: 0.3rem calc($illustration-size * 0.05) 0
+      calc($illustration-size * 0.03);
     z-index: 999;
     transition: transform 0.3s ease-out;
     white-space: pre-line;
@@ -30,9 +33,14 @@
 
   .illustration {
     display: block;
-    width: $illustration-size;
-    height: $illustration-size;
+    width: 100%;
+    height: 100%;
+
     transition: transform 0.3s ease-out;
+
+    @if $inner-border {
+      border: solid var(--clr-blue-2) 1px;
+    }
 
     @if $hover-enabled {
       &:hover {
@@ -45,7 +53,42 @@
   .subheading {
     position: absolute;
     right: 0;
-    padding-top: $border-size / 4;
+    padding-top: calc($border-size / 8);
+    color: var(--clr-blue-2);
+    font-size: $subheading-size;
+    font-family: "MyriadPro-Regular";
+  }
+}
+
+@mixin card2($heading-size, $subheading-size, $illustration-size) {
+  width: $illustration-size;
+  height: $illustration-size;
+  position: relative;
+
+  .heading {
+    position: absolute;
+    font-family: "MyriadPro-Regular";
+    font-size: $heading-size;
+    color: var(--clr-blue-2);
+    top: calc($illustration-size / 15);
+    left: calc($illustration-size / 8);
+    z-index: 999;
+    transition: transform 0.3s ease-out;
+    white-space: pre-line;
+  }
+
+  .illustration {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.3s ease-out;
+  }
+
+  .subheading {
+    position: absolute;
+    bottom: calc($illustration-size / 15);
+    right: calc($illustration-size / 8);
     color: var(--clr-blue-2);
     font-size: $subheading-size;
     font-family: "MyriadPro-Regular";
