@@ -41,11 +41,14 @@ const IllustrationsDisplay = () => {
     <section className={styles.illustrations}>
       <div className={styles.activeImageDisplay}>
         <Card
-          heading={storyDetails.heading}
-          subheading={storyDetails.subheading}
+          heading={
+            (Image.idx > 1 && storyDetails?.decorated_heading) ||
+            storyDetails.heading
+          }
+          subheading={Image.idx !== 3 && storyDetails.subheading}
           illustration={[Image.src]}
           card={
-            Image.idx === 0 || Image.idx === 1
+            Image.idx <= 1
               ? "card_individual_active_2"
               : "card_individual_active"
           }
@@ -63,13 +66,14 @@ const IllustrationsDisplay = () => {
               onClick={() => handleImageClick(illustration, index)}
             >
               <Card
-                heading={storyDetails.heading}
-                subheading={storyDetails.subheading}
+                heading={
+                  (index > 1 && storyDetails?.decorated_heading) ||
+                  storyDetails.heading
+                }
+                subheading={index !== 3 && storyDetails.subheading}
                 illustration={illustration}
                 card={
-                  index === 0 || index === 1
-                    ? "card_individual_side_2"
-                    : "card_individual_side"
+                  index <= 1 ? "card_individual_side_2" : "card_individual_side"
                 }
               />
             </div>

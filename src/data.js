@@ -2,6 +2,7 @@ const storiesData = {
   "Christ is the Creator of the World": [
     {
       heading: "The Creation of the World",
+      decorated_heading: "The Creation of\nthe World",
       subheading: "Genesis 1-2:4",
       illustration: "/assets/images/card/The_Creation_of_the_World/3.svg",
       text: "",
@@ -14,6 +15,7 @@ const storiesData = {
     },
     {
       heading: "Expulsion from Paradise",
+      decorated_heading: "Expulsion from\nParadise",
       subheading: "Genesis 3:1-24",
       illustration: "/assets/images/card/Expulsion_from_Paradise/3.svg",
       text: "",
@@ -42,12 +44,14 @@ const storiesData = {
   "Theotokos, Our Intercessor to Christ": [
     {
       heading: "Jacob's Ladder",
+      decorated_heading: "Jacob's\nLadder",
       subheading: "Genesis 22 : 1-18",
       illustration: "/assets/images/card/Jacob's_Ladder/3.svg",
       text: "",
     },
     {
       heading: "Joseph and his brothers",
+      decorated_heading: "Joseph and his\nbrothers",
       subheading: "Genesis 37 : 3-35",
       illustration: "/assets/images/card/Joseph_and_his_brothers/3.svg",
       text: "",
@@ -68,6 +72,7 @@ const storiesData = {
     },
     {
       heading: "Moses and the Burning Bush",
+      decorated_heading: "Moses and the\nBurning Bush",
       subheading: "Exodus 3:1-20",
       illustration: "/assets/images/card/Moses_and_the_Burning_Bush/3.svg",
       text: "",
@@ -79,14 +84,15 @@ const storiesData = {
       text: "",
     },
     {
-      heading: "Israel passes through the Red Sea",
+      heading: "Israel passes thru the Red Sea",
+      decorated_heading: "Israel passes thru\nthe Red Sea",
       subheading: "Exodus 13:20-22; 14; 15:1-19",
-      illustration:
-        "/assets/images/card/Israel_passes_through_the_Red_Sea/3.svg",
+      illustration: "/assets/images/card/Israel_passes_thru_the_Red_Sea/3.svg",
       text: "",
     },
     {
       heading: "Water in the Wilderness",
+      decorated_heading: "Water in the\nWilderness",
       subheading: "Exodus 15:20-16:1; 17:1-7",
       illustration: "/assets/images/card/Water_in_the_Wilderness/3.svg",
       text: "",
@@ -107,6 +113,7 @@ const storiesData = {
   "Christ is Our Shepherd and King": [
     {
       heading: "David the Anointed King",
+      decorated_heading: "David the\nAnointed King",
       subheading: "1 Samuel 16:1-13",
       illustration: "/assets/images/card/David_the_Anointed_King/3.svg",
       text: "",
