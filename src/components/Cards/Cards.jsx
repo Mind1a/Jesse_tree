@@ -17,7 +17,7 @@ const Cards = () => {
                 to={`${headingToParam(title)}/${headingToParam(story.heading)}`}
               >
                 <Card
-                  heading={story.heading}
+                  heading={story?.decorated_heading || story.heading}
                   subheading=""
                   illustration={story.illustration}
                   card="card_main"
