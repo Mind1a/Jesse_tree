@@ -1,0 +1,123 @@
+@mixin card(
+  $border-color,
+  $heading-size,
+  $subheading-size,
+  $illustration-size,
+  $hover-enabled: true,
+  $hover-cursor-enabled: false
+) {
+  background-color: $border-color;
+  width: $illustration-size;
+  height: $illustration-size;
+  position: relative;
+
+  @if $hover-cursor-enabled {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .heading {
+    position: absolute;
+    font-family: "Sandro-Universal-Bold";
+    font-size: $heading-size;
+    color: var(--clr-blue-2);
+    top: calc($illustration-size / 10);
+    left: calc($illustration-size / 8);
+    z-index: 999;
+    transition: transform 0.3s ease-out;
+    white-space: pre-line;
+    line-height: calc($illustration-size / 10);
+
+    @if $hover-enabled {
+      &:has(+ .illustration:hover) {
+        transform: scale(1.02);
+      }
+    }
+  }
+
+  .illustration {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.3s ease-out;
+
+    @if $hover-enabled {
+      &:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .subheading {
+    position: absolute;
+    color: var(--clr-blue-2);
+    font-size: $subheading-size;
+    font-family: "MyriadPro-Regular";
+
+    bottom: calc($illustration-size / 25);
+    right: calc($illustration-size / 9.5);
+  }
+}
+
+@mixin card2(
+  $background-color,
+  $heading-size,
+  $subheading-size,
+  $illustration-size,
+  $hover-cursor-enabled: false
+) {
+  background-color: $background-color;
+  width: $illustration-size;
+  height: $illustration-size;
+  position: relative;
+
+  @if $hover-cursor-enabled {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .heading {
+    position: absolute;
+    font-family: "MyriadPro-Regular";
+    font-size: $heading-size;
+    color: var(--clr-blue-2);
+    top: calc($illustration-size / 22);
+    left: calc($illustration-size / 9.5);
+    z-index: 999;
+    transition: transform 0.3s ease-out;
+    white-space: pre-line;
+  }
+
+  .illustration {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.3s ease-out;
+  }
+
+  .subheading {
+    position: absolute;
+    bottom: calc($illustration-size / 25);
+    right: calc($illustration-size / 9.5);
+    color: var(--clr-blue-2);
+    font-size: $subheading-size;
+    font-family: "MyriadPro-Regular";
+  }
+}
+
+@mixin aboutEducatorsLayout {
+  max-width: var(--page-width);
+  margin: 8.3rem auto;
+  font-size: var(--f-size-2);
+  line-height: 2.5rem;
+  color: var(--clr-text-2);
+
+  p:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
