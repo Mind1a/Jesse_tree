@@ -1,14 +1,7 @@
-import { Link } from "react-router-dom"
-import styles from "./Error.module.scss"
+import { NotFound } from "../../components/NotFound"
 
 const Error = () => {
-  return (
-    <main className={styles.main}>
-      <p>404</p>
-      <p>Page Not Found</p>
-      <Link to="/">Go Home</Link>
-    </main>
-  )
+  return <NotFound />
 }
 
 export default Error
