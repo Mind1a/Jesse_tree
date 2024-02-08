@@ -1,40 +1,37 @@
 import { useParams } from "react-router-dom"
-import { useMemo, useState } from "react"
+import { useState } from "react"
 import { Card } from "../Card/"
 import { getStoryDetailsByheading, paramToHeading } from "../../utils"
 import styles from "./CardDetails.module.scss"
+import { NotFound } from "../NotFound"
 
 const CardDetails = () => {
+  let { stories, story } = useParams()
+
+  const storyDetails = getStoryDetailsByheading(
+    paramToHeading(stories),
+    paramToHeading(story)
+  )
+
+  if (!storyDetails) {
+    return <NotFound />
+  }
+
   return (
     <>
       <main className={styles.main}>
-        <IllustrationsDisplay />
+        <IllustrationsDisplay storyDetails={storyDetails} />
         <TextDisplay />
       </main>
     </>
   )
 }
 
-const IllustrationsDisplay = () => {
-  let { stories, story } = useParams()
+const IllustrationsDisplay = ({ storyDetails }) => {
+  const [activeImgIdx, setActiveImgIdx] = useState(0)
 
-  const storyDetails = useMemo(() => {
-    return getStoryDetailsByheading(
-      paramToHeading(stories),
-      paramToHeading(story)
-    )
-  }, [stories, story])
-
-  const [Image, setImage] = useState({
-    src: storyDetails.illustrations[0],
-    idx: 0,
-  })
-
-  const handleImageClick = (illustration, index) => {
-    setImage({
-      src: illustration,
-      idx: index,
-    })
+  const handleImgChange = (index) => {
+    setActiveImgIdx(index)
   }
 
   return (
@@ -42,13 +39,13 @@ const IllustrationsDisplay = () => {
       <div className={styles.activeImageDisplay}>
         <Card
           heading={
-            (Image.idx > 1 && storyDetails?.decorated_heading) ||
+            (activeImgIdx > 1 && storyDetails?.decorated_heading) ||
             storyDetails.heading
           }
-          subheading={Image.idx !== 3 && storyDetails.subheading}
-          illustration={[Image.src]}
+          subheading={activeImgIdx !== 3 && storyDetails.subheading}
+          illustration={[storyDetails.illustrations[activeImgIdx]]}
           card={
-            Image.idx <= 1
+            activeImgIdx <= 1
               ? "card_individual_active_2"
               : "card_individual_active"
           }
@@ -61,9 +58,11 @@ const IllustrationsDisplay = () => {
             <div
               key={illustration}
               className={`${styles.illustration} ${
-                illustration == Image.src ? styles.activeSideImage : ""
+                illustration == storyDetails.illustrations[activeImgIdx]
+                  ? styles.activeSideImage
+                  : ""
               }`}
-              onClick={() => handleImageClick(illustration, index)}
+              onClick={() => handleImgChange(index)}
             >
               <Card
                 heading={
