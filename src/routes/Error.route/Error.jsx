@@ -1,5 +1,7 @@
+import { NotFound } from "../../components/NotFound"
+
 const Error = () => {
-  return <div>Error</div>
+  return <NotFound />
 }
 
 export default Error
