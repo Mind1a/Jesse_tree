@@ -1,0 +1,131 @@
+@use "../../../scss/style" as *;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  height: 2.9rem;
+  flex-grow: 1;
+  max-width: 102rem;
+
+  .link {
+    margin-bottom: 4px;
+    border: solid var(--clr-blue-2) 2px;
+    border-bottom: none;
+    border-radius: 2px 2px 0px 0px;
+
+    padding: 0rem 2.2%;
+    font-size: clamp(1rem, 1rem + 0.55vw, 2rem);
+
+    a {
+      height: 100%;
+      text-decoration: none;
+      color: var(--clr-blue-2);
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      &.active {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .lang {
+    border: none;
+    background-color: var(--clr-gray-3);
+
+    font-size: var(--f-size-3);
+    color: var(--clr-blue-2);
+    letter-spacing: 0.4rem;
+
+    padding: 0rem 0.2rem 2rem 0.6rem;
+  }
+}
+
+.sideNav {
+  background-color: var(--clr-gray-1);
+  opacity: 0.9;
+  height: 100%;
+  width: min(100%, 26rem);
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 4rem 1.2rem 0 0;
+  z-index: -1;
+
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+
+  .link {
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-top: 1rem;
+
+    a {
+      text-decoration: none;
+      color: var(--clr-blue-2);
+      padding-right: 0.5rem;
+
+      &.active {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .link::after {
+    content: url("/assets/icons/divider-line.svg");
+  }
+
+  .lang {
+    background-color: inherit;
+    border: none;
+    padding: 1rem 0.5rem 0 0;
+    font-size: var(--f-size-3);
+    color: var(--clr-blue-2);
+  }
+
+  @include breakpoint-min(medium) {
+    display: none;
+  }
+}
+
+.burger {
+  margin-right: 0.625rem;
+  background-color: white;
+  align-self: flex-end;
+  display: none;
+}
+
+.openburger {
+  background-color: var(--clr-gray-1);
+}
+
+@include breakpoint(large) {
+  .nav {
+    height: 1.7rem;
+    gap: 0.25rem;
+    .link {
+      font-size: 1.1rem;
+    }
+
+    .lang {
+      font-size: 1rem;
+      letter-spacing: 0.2rem;
+
+      padding: 0.15rem 0.2rem 0rem 0.4rem;
+    }
+  }
+}
+@include breakpoint(medium) {
+  .nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    margin-left: auto;
+  }
+}
