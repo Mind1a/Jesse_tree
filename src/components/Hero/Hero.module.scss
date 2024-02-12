@@ -1,33 +1,102 @@
+@use "../../scss/abstracts/breakpoints" as *;
+
 .hero {
-  max-width: var(--page-width);
-  margin: 10rem auto;
-  padding: 0px 2rem;
+  --img-height: 39rem;
+  --hero-y-margin: 10rem;
+  --wrapper-gap: 8rem;
+  --text-gap: 2.6rem;
+  --text-line-height: 2.6rem;
+  --scroll-width: fit-content;
+  --scroll-margin: 10rem;
+
+  max-width: min(80%, var(--page-width));
+  margin: var(--hero-y-margin) auto;
 
   .scroll {
     width: fit-content;
-    margin: 5rem auto;
+    img {
+      width: var(--scroll-width);
+    }
+    margin: var(--scroll-margin) auto;
   }
 }
 
 .wrapper {
   display: flex;
-  justify-content: center;
-  gap: 8rem;
+  align-items: center;
+  gap: var(--wrapper-gap);
 
-  h1 {
-    width: 35rem;
-    text-align: right;
-    font-size: 8rem;
-    line-height: 8rem;
+  img {
+    height: var(--img-height);
   }
 
   .text {
-    font-size: var(--f-size-1);
+    height: var(--img-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--text-gap);
+
     color: var(--clr-text-1);
-    line-height: 2.6rem;
-    width: 56rem;
-    p:not(:last-child) {
-      margin-bottom: 3rem;
+    line-height: var(--text-line-height);
+  }
+}
+
+@include breakpoint(xlarge) {
+  .hero {
+    --img-height: 30rem;
+    --hero-y-margin: 7rem;
+    --text-gap: 1.5rem;
+    --text-line-height: 2rem;
+    --scroll-margin: 4rem;
+  }
+}
+@include breakpoint(large) {
+  .hero {
+    --img-height: 25rem;
+    --hero-y-margin: 5rem;
+    --wrapper-gap: 2rem;
+    --text-gap: 1rem;
+    --text-line-height: 1.9rem;
+    --scroll-margin: 2rem;
+    --scroll-width: 4rem;
+  }
+}
+@include breakpoint(medium) {
+  .hero {
+    max-width: 85%;
+    --img-height: 20rem;
+    --hero-y-margin: 4rem;
+    --wrapper-gap: 1rem;
+    --text-gap: 0.5rem;
+    --text-line-height: 1.1rem;
+    --scroll-width: 3rem;
+  }
+}
+@include breakpoint(small) {
+  .hero {
+    max-width: 95%;
+    --img-height: 15rem;
+    --hero-y-margin: 3rem;
+    --wrapper-gap: 0.5rem;
+    --text-line-height: 0.75rem;
+  }
+}
+@include breakpoint(xsmall) {
+  .hero {
+    .wrapper {
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      .text {
+        display: none;
+      }
+    }
+
+    .scroll {
+      display: none;
     }
   }
 }

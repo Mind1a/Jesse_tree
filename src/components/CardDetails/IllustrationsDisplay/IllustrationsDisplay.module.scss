@@ -1,0 +1,90 @@
+@use "../../../scss/style" as *;
+
+.illustrations {
+  display: flex;
+  gap: 0.5rem;
+  height: fit-content;
+
+  .activeImageDisplay {
+    .active {
+    }
+  }
+
+  .side {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    gap: 0.5rem;
+
+    .activeSideImage {
+      opacity: 0.5;
+      transition: transform 0.3s ease-in;
+      transform: translateX(-0.5rem);
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .actions {
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      transform: translateX(-0.25rem);
+
+      .print,
+      .download {
+        width: calc(var(--individual-card-size) / 10.9);
+        height: calc(var(--individual-card-size) / 10.9);
+        background-color: var(--clr-gray-1);
+
+        padding: 0.7rem;
+      }
+    }
+  }
+
+  @include breakpoint(large) {
+    --individual-card-size: 70vw;
+  }
+  @include breakpoint(medium) {
+    display: none;
+  }
+}
+
+.mobileDisplay {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0;
+  .illustration {
+    display: flex;
+    flex-direction: column;
+
+    .download {
+      width: min(3rem, 12vw);
+      height: min(3rem, 12vw);
+
+      background-color: var(--clr-gray-1);
+
+      padding: min(0.5rem, 2vw);
+      align-self: flex-end;
+    }
+  }
+
+  @include breakpoint-min(medium) {
+    display: none;
+  }
+  @include breakpoint(medium) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+
+    --individual-card-size: 40vw;
+  }
+  @include breakpoint(small) {
+    --individual-card-size: 90vw;
+  }
+}

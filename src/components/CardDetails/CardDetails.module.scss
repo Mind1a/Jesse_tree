@@ -1,6 +1,9 @@
+@use "../../scss/abstracts/breakpoints" as *;
+
 .main {
   margin: 3.5rem 1rem;
   display: flex;
+  flex-wrap: wrap-reverse;
   justify-content: center;
   gap: 3.5rem;
   .text {
@@ -8,57 +11,24 @@
     color: var(--clr-gray-4);
     max-width: 49rem;
     margin-top: 5rem;
-    line-height: 42px;
+    line-height: 2.6rem;
+
+    @include breakpoint(large) {
+      margin-top: 3rem;
+      font-size: 1.3rem;
+    }
   }
 }
 
-.illustrations {
-  display: flex;
-  gap: 0.5rem;
-  height: fit-content;
+@include breakpoint(medium) {
+  .main {
+    width: 90vw;
+    margin: auto;
+    gap: 1rem;
 
-  .activeImageDisplay {
-    .active {
-    }
-  }
-
-  .illustration {
-    width: 9rem;
-    height: 9rem;
-  }
-
-  .side {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-
-    gap: 0.5rem;
-
-    .activeSideImage {
-      opacity: 0.5;
-      transition: transform 0.3s ease-in;
-      transform: translateX(-0.5rem);
-      &:hover {
-        cursor: pointer;
-      }
-    }
-
-    .actions {
-      margin-top: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
-      transform: translateX(-0.25rem);
-
-      .print,
-      .download {
-        width: 4.8rem;
-        height: 4.8rem;
-        background-color: var(--clr-gray-1);
-
-        padding: 0.7rem;
-      }
+    .text {
+      font-size: 1rem;
+      line-height: 1.8rem;
     }
   }
 }
