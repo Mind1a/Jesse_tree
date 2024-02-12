@@ -111,11 +111,12 @@
 }
 
 @mixin aboutEducatorsLayout {
-  max-width: var(--page-width);
-  margin: 8.3rem auto;
-  font-size: var(--f-size-2);
-  line-height: 2.5rem;
+  max-width: min(85%, var(--page-width));
+  margin: clamp(2.925rem, 1.7511rem + 5.8696vi, 6.3rem) auto;
   color: var(--clr-text-2);
+
+  font-size: clamp(1rem, 0.6522rem + 1.7391vi, var(--f-size-2));
+  line-height: clamp(1.875rem, 1.6576rem + 1.087vi, 2.5rem);
 
   p:not(:last-child) {
     margin-bottom: 3rem;
