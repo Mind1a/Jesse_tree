@@ -12,17 +12,20 @@ const Cards = () => {
           <h1 className={styles.title}>{title}</h1>
           <div className={styles.cards}>
             {stories.map((story, index) => (
-              <Link
-                key={index}
-                to={`${headingToParam(title)}/${headingToParam(story.heading)}`}
-              >
-                <Card
-                  heading={story?.decorated_heading || story.heading}
-                  subheading=""
-                  illustration={story.illustration}
-                  card="card_main"
-                />
-              </Link>
+              <div className="card" key={index}>
+                <Link
+                  to={`${headingToParam(title)}/${headingToParam(
+                    story.heading
+                  )}`}
+                >
+                  <Card
+                    heading={story?.decorated_heading || story.heading}
+                    subheading=""
+                    illustration={story.illustration}
+                    card="card_main"
+                  />
+                </Link>
+              </div>
             ))}
           </div>
         </section>

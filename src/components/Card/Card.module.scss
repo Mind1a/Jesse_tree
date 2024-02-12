@@ -1,21 +1,52 @@
 @use "../../scss/abstracts/mixins" as *;
 
 .card_main {
-  @include card(var(--clr-white-1), 2.8rem, 1.4rem, 32rem, true);
+  @include card(
+    var(--clr-white-1),
+    2.8rem,
+    1.4rem,
+    var(--main-card-size),
+    true
+  );
 }
 
 .card_individual_active {
-  @include card(var(--clr-gray-1), 4.5rem, 2.3rem, 52.5rem, false);
+  @include card(
+    var(--clr-gray-1),
+    4.5rem,
+    2.3rem,
+    var(--individual-card-size),
+    false
+  );
 }
 
 .card_individual_active_2 {
-  @include card2(var(--clr-gray-1), 2.1rem, 2.1rem, 52.5rem);
+  @include card2(
+    var(--clr-gray-1),
+    2.1rem,
+    2.1rem,
+    var(--individual-card-size)
+  );
 }
 
 .card_individual_side {
   @include card(var(--clr-gray-1), 0.75rem, 0.4rem, 9rem, false, true);
+  @include card(
+    var(--clr-gray-1),
+    0.75rem,
+    0.4rem,
+    calc(var(--individual-card-size) / 5.8),
+    false,
+    true
+  );
 }
 
 .card_individual_side_2 {
-  @include card2(var(--clr-gray-1), 0.4rem, 0.4rem, 9rem, true);
+  @include card2(
+    var(--clr-gray-1),
+    0.4rem,
+    0.4rem,
+    calc(var(--individual-card-size) / 5.8),
+    true
+  );
 }

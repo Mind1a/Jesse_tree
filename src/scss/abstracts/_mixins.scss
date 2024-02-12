@@ -20,7 +20,7 @@
   .heading {
     position: absolute;
     font-family: "Sandro-Universal-Bold";
-    font-size: $heading-size;
+    font-size: calc($illustration-size / 11.5);
     color: var(--clr-blue-2);
     top: calc($illustration-size / 10);
     left: calc($illustration-size / 8);
@@ -54,7 +54,7 @@
   .subheading {
     position: absolute;
     color: var(--clr-blue-2);
-    font-size: $subheading-size;
+    font-size: calc($illustration-size / 22.8);
     font-family: "MyriadPro-Regular";
 
     bottom: calc($illustration-size / 25);
@@ -83,7 +83,7 @@
   .heading {
     position: absolute;
     font-family: "MyriadPro-Regular";
-    font-size: $heading-size;
+    font-size: calc($illustration-size / 25);
     color: var(--clr-blue-2);
     top: calc($illustration-size / 22);
     left: calc($illustration-size / 9.5);
@@ -105,7 +105,7 @@
     bottom: calc($illustration-size / 25);
     right: calc($illustration-size / 9.5);
     color: var(--clr-blue-2);
-    font-size: $subheading-size;
+    font-size: calc($illustration-size / 25);
     font-family: "MyriadPro-Regular";
   }
 }

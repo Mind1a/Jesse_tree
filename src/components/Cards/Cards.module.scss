@@ -21,7 +21,7 @@
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, 31.8rem);
+      grid-template-columns: repeat(auto-fit, var(--main-card-size));
       grid-gap: 2rem;
       justify-items: center;
       justify-content: center;
