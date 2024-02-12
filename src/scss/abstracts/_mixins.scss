@@ -1,7 +1,5 @@
 @mixin card(
   $border-color,
-  $heading-size,
-  $subheading-size,
   $illustration-size,
   $hover-enabled: true,
   $hover-cursor-enabled: false
@@ -64,8 +62,6 @@
 
 @mixin card2(
   $background-color,
-  $heading-size,
-  $subheading-size,
   $illustration-size,
   $hover-cursor-enabled: false
 ) {
