@@ -2,20 +2,21 @@ import { NavLink } from "react-router-dom"
 import { HashLink } from "react-router-hash-link"
 import styles from "./Menu.module.scss"
 
-const NavItems = () => {
+const NavItems = ({ closeSideMenu }) => {
   return (
     <>
       <div className={styles.link}>
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? styles.active : "")}
+          onClick={closeSideMenu}
         >
           home
           {/* თავფურცელი */}
         </NavLink>
       </div>
       <div className={styles.link}>
-        <HashLink to="/#cards">
+        <HashLink to="/#cards" onClick={closeSideMenu}>
           Jesse Tree Readings
           {/* იესეს ხის საკითხავი */}
         </HashLink>
@@ -24,6 +25,7 @@ const NavItems = () => {
         <NavLink
           to="/educators"
           className={({ isActive }) => (isActive ? styles.active : "")}
+          onClick={closeSideMenu}
         >
           For Educators
           {/* განმანათლებლისათვის */}
@@ -33,6 +35,7 @@ const NavItems = () => {
         <NavLink
           to="/about"
           className={({ isActive }) => (isActive ? styles.active : "")}
+          onClick={closeSideMenu}
         >
           About
           {/* პროექტის შესახებ */}
