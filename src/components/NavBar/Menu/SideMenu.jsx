@@ -14,6 +14,7 @@ const SideMenu = () => {
       document.documentElement.style.scrollbarGutter = "stable"
     } else {
       document.body.style.overflow = "auto"
+      document.documentElement.style.scrollbarGutter = "auto"
     }
   }, [toggleSideMenu])
 

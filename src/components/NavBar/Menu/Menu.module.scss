@@ -90,6 +90,9 @@
   @include breakpoint-min(medium) {
     display: none;
   }
+  @include breakpoint(small) {
+    width: 100%;
+  }
 }
 
 .burger {
