@@ -19,10 +19,10 @@
   .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, var(--main-card-size));
-    grid-gap: 2rem;
+    gap: 2rem;
     justify-items: center;
     justify-content: center;
-    padding: 0 4rem 6rem 4rem;
+    padding-bottom: 6rem;
 
     .card {
       .more {
@@ -37,9 +37,15 @@
         color: var(--clr-gray-4);
       }
     }
-  }
 
-  @include breakpoint(small) {
-    --main-card-size: 95vw;
+    @include breakpoint(xlarge) {
+      --main-card-size: min(30vw, 32rem);
+      gap: 1.5vw;
+      padding-bottom: 4rem;
+    }
+    @include breakpoint(small) {
+      --main-card-size: 95vw;
+      gap: 2rem;
+    }
   }
 }
