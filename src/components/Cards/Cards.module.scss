@@ -1,31 +1,6 @@
+@use "../../scss/abstracts/breakpoints" as *;
+
 .main {
   max-width: var(--main-page-width);
   margin: 8rem auto;
-
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-
-  .section {
-    background-color: var(--clr-gray-1);
-    max-width: inherit;
-
-    .title {
-      font-size: var(--f-size-3);
-      color: var(--clr-gray-4);
-      height: 6rem;
-      display: flex;
-      align-items: center;
-      padding: 0 3rem;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, var(--main-card-size));
-      grid-gap: 2rem;
-      justify-items: center;
-      justify-content: center;
-      padding: 0 4rem 6rem 4rem;
-    }
-  }
 }

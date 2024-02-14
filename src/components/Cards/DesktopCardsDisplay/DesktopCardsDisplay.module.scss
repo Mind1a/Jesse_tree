@@ -1,0 +1,11 @@
+@use "../../../scss/abstracts/breakpoints" as *;
+
+.desktopDisplay {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  @include breakpoint(small) {
+    display: none;
+  }
+}
