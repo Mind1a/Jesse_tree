@@ -1,0 +1,37 @@
+@use "../../../scss/style" as *;
+
+.mobileDisplay {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0;
+  .illustration {
+    display: flex;
+    flex-direction: column;
+
+    .download {
+      width: min(3rem, 12vw);
+      height: min(3rem, 12vw);
+
+      background-color: var(--clr-gray-1);
+
+      padding: min(0.5rem, 2vw);
+      align-self: flex-end;
+    }
+  }
+
+  @include breakpoint-min(medium) {
+    display: none;
+  }
+  @include breakpoint(medium) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+
+    --individual-card-size: 40vw;
+  }
+  @include breakpoint(small) {
+    --individual-card-size: 90vw;
+  }
+}

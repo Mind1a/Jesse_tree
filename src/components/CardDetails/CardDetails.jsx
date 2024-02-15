@@ -1,11 +1,9 @@
 import { useParams } from "react-router-dom"
 import { getStoryDetailsByheading, paramToHeading } from "../../utils"
 import { NotFound } from "../NotFound"
-import {
-  GalleryIllustrationsDisplay,
-  MobileIllustrationsDisplay,
-} from "./IllustrationsDisplay"
+import { DesktopIllustrationsDisplay } from "./DesktopIllustrationsDisplay"
 import styles from "./CardDetails.module.scss"
+import { MobileIllustrationsDisplay } from "./MobileIllustrationsDisplay"
 
 const CardDetails = () => {
   let { stories, story } = useParams()
@@ -22,7 +20,7 @@ const CardDetails = () => {
   return (
     <>
       <main className={styles.main}>
-        <GalleryIllustrationsDisplay storyDetails={storyDetails} />
+        <DesktopIllustrationsDisplay storyDetails={storyDetails} />
         <MobileIllustrationsDisplay storyDetails={storyDetails} />
         <TextDisplay />
       </main>
