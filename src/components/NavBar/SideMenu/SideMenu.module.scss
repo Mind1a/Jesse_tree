@@ -1,0 +1,47 @@
+@use "../../../scss/style" as *;
+
+.menuWrapper {
+  @include breakpoint-min(medium) {
+    display: none;
+  }
+}
+
+.sideNav {
+  background-color: var(--clr-gray-1);
+  opacity: 0.9;
+  width: min(100%, 26rem);
+  position: absolute;
+  height: 100vh;
+  top: 3.2rem;
+  right: 0;
+  padding: 1rem 1.2rem 3rem 0;
+  z-index: -1;
+
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+
+  overflow-y: auto;
+
+  @include breakpoint(small) {
+    width: 100%;
+  }
+}
+
+.burger {
+  margin-right: 0.625rem;
+  background-color: white;
+  align-self: flex-end;
+  display: none;
+}
+
+.openburger {
+  background-color: var(--clr-gray-1);
+}
+
+@include breakpoint(medium) {
+  .burger {
+    display: block;
+    margin-left: auto;
+  }
+}

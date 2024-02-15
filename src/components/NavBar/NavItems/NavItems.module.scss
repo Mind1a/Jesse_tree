@@ -1,0 +1,77 @@
+@use "../../../scss/style" as *;
+
+.link {
+  margin-bottom: 4px;
+  border: solid var(--clr-blue-2) 2px;
+  border-bottom: none;
+  border-radius: 2px 2px 0px 0px;
+
+  padding: 0rem 2.2%;
+  font-size: clamp(1rem, 1rem + 0.55vw, 2rem);
+
+  a {
+    height: 100%;
+    text-decoration: none;
+    color: var(--clr-blue-2);
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    &.active {
+      opacity: 0.5;
+    }
+  }
+}
+
+.lang {
+  border: none;
+  background-color: var(--clr-gray-3);
+
+  font-size: var(--f-size-3);
+  color: var(--clr-blue-2);
+  letter-spacing: 0.4rem;
+
+  padding: 0rem 0.2rem 2rem 0.6rem;
+}
+
+.mobileLink {
+  text-align: right;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding-top: 1rem;
+
+  a {
+    text-decoration: none;
+    color: var(--clr-blue-2);
+    padding-right: 0.5rem;
+
+    &.active {
+      opacity: 0.5;
+    }
+  }
+
+  &::after {
+    content: url("/assets/icons/divider-line.svg");
+  }
+}
+
+.mobileLang {
+  background-color: inherit;
+  border: none;
+  padding: 1rem 0.5rem 0 0;
+  font-size: var(--f-size-3);
+  color: var(--clr-blue-2);
+}
+
+@include breakpoint(large) {
+  .link {
+    font-size: 1.1rem;
+  }
+
+  .lang {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+
+    padding: 0.15rem 0.2rem 0rem 0.4rem;
+  }
+}

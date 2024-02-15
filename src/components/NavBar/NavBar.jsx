@@ -1,5 +1,6 @@
 import styles from "./NavBar.module.scss"
-import { TopMenu, SideMenu } from "./Menu"
+import { TopMenu } from "./TopMenu"
+import { SideMenu } from "./SideMenu"
 
 const NavBar = () => {
   return (
