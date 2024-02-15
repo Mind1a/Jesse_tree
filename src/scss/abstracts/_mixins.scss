@@ -1,7 +1,5 @@
 @mixin card(
   $border-color,
-  $heading-size,
-  $subheading-size,
   $illustration-size,
   $hover-enabled: true,
   $hover-cursor-enabled: false
@@ -20,11 +18,11 @@
   .heading {
     position: absolute;
     font-family: "Sandro-Universal-Bold";
-    font-size: $heading-size;
+    font-size: calc($illustration-size / 11.5);
     color: var(--clr-blue-2);
     top: calc($illustration-size / 10);
     left: calc($illustration-size / 8);
-    z-index: 999;
+    z-index: 1;
     transition: transform 0.3s ease-out;
     white-space: pre-line;
     line-height: calc($illustration-size / 10);
@@ -54,7 +52,7 @@
   .subheading {
     position: absolute;
     color: var(--clr-blue-2);
-    font-size: $subheading-size;
+    font-size: calc($illustration-size / 22.8);
     font-family: "MyriadPro-Regular";
 
     bottom: calc($illustration-size / 25);
@@ -64,8 +62,6 @@
 
 @mixin card2(
   $background-color,
-  $heading-size,
-  $subheading-size,
   $illustration-size,
   $hover-cursor-enabled: false
 ) {
@@ -83,11 +79,11 @@
   .heading {
     position: absolute;
     font-family: "MyriadPro-Regular";
-    font-size: $heading-size;
+    font-size: calc($illustration-size / 25);
     color: var(--clr-blue-2);
     top: calc($illustration-size / 22);
     left: calc($illustration-size / 9.5);
-    z-index: 999;
+    z-index: 1;
     transition: transform 0.3s ease-out;
     white-space: pre-line;
   }
@@ -105,17 +101,18 @@
     bottom: calc($illustration-size / 25);
     right: calc($illustration-size / 9.5);
     color: var(--clr-blue-2);
-    font-size: $subheading-size;
+    font-size: calc($illustration-size / 25);
     font-family: "MyriadPro-Regular";
   }
 }
 
 @mixin aboutEducatorsLayout {
-  max-width: var(--page-width);
-  margin: 8.3rem auto;
-  font-size: var(--f-size-2);
-  line-height: 2.5rem;
+  max-width: min(85%, var(--page-width));
+  margin: clamp(2.925rem, 1.7511rem + 5.8696vi, 6.3rem) auto;
   color: var(--clr-text-2);
+
+  font-size: clamp(1rem, 0.6522rem + 1.7391vi, var(--f-size-2));
+  line-height: clamp(1.875rem, 1.6576rem + 1.087vi, 2.5rem);
 
   p:not(:last-child) {
     margin-bottom: 3rem;

@@ -1,16 +1,28 @@
+@use "../../scss/abstracts/breakpoints" as *;
+
 .header {
   background-color: var(--clr-navbar-bg);
   font-size: var(--f-size-navbar);
   height: 8rem;
+  z-index: 999;
+  position: relative;
+
+  @include breakpoint(large) {
+    height: 5rem;
+  }
+  @include breakpoint(medium) {
+    height: 3.2rem;
+  }
 }
 
 .wrapper {
   height: inherit;
   display: flex;
   align-items: flex-end;
-  gap: 1.8rem;
   max-width: 120rem;
   margin: 0 auto;
+  gap: min(2rem, 2%);
+  justify-content: space-between;
 
   .logo {
     transform: translateY(40%);
@@ -21,54 +33,19 @@
     height: 12rem;
   }
 
-  .nav {
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-between;
-    gap: 1rem;
-    height: 2.9rem;
-    max-width: 91rem;
+  @include breakpoint(large) {
+    gap: clamp(0.2rem, 0.1rem + 0.8vw, 2rem);
 
-    .link {
-      margin-bottom: 4px;
-      border: solid var(--clr-blue-2) 2px;
-      border-bottom: none;
-      border-radius: 2px 2px 0px 0px;
-      padding: 0rem min(3rem, 3%);
-
-      &:nth-of-type(2) {
-        margin-left: 2rem;
-      }
-
-      &:nth-of-type(3) {
-        margin-right: auto;
-        margin-left: auto;
-      }
-
-      a {
-        height: 100%;
-        text-decoration: none;
-        color: var(--clr-blue-2);
-        display: flex;
-        align-items: flex-end;
-
-        &.active {
-          opacity: 0.5;
-        }
-      }
+    .logo {
+      width: 6rem;
+      height: 5rem;
+      margin-left: 5px;
     }
   }
-
-  .lang {
-    border: none;
-    background-color: var(--clr-gray-3);
-    height: 2.938rem;
-
-    font-size: var(--f-size-3);
-    color: var(--clr-blue-2);
-    letter-spacing: 0.4rem;
-
-    padding: 0rem 0.2rem 0rem 0.6rem;
-    margin-left: auto;
+  @include breakpoint(medium) {
+    .logo {
+      width: 5rem;
+      height: 4rem;
+    }
   }
 }
