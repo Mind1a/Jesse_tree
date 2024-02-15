@@ -31,12 +31,13 @@ const CardDetails = () => {
 const TextDisplay = () => {
   return (
     <p className={styles.text}>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt numquam amet
-      nostrum cum ut eum, provident explicabo odio rerum laboriosam eos
-      blanditiis totam dolor fuga aut minima facilis, deleniti optio. Hic
-      cupiditate impedit quibusdam eligendi iste at ratione minus voluptates
-      deserunt porro sequi error dolore doloribus recusandae culpa fugit nihil
-      dicta minima deleniti neque ducimus ipsum, beatae laborum? Ab, optio!
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacinia
+      id risus eu tincidunt. Duis porttitor nunc a risus congue sollicitudin. In
+      hac habitasse platea dictumst. Fusce nec velit libero. Interdum et
+      malesuada fames ac ante ipsum primis in faucibus. Mauris eu luctus nibh,
+      id blandit tellus. Vestibulum dictum blandit nunc nec ultricies. Cras
+      egestas commodo magna rhoncus lacinia. Sed condimentum efficitur turpis,
+      nec bibendum leo aliquam eu. Quisque vitae sodales felis. Nulla facilisi.{" "}
     </p>
   )
 }

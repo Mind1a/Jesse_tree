@@ -4,6 +4,7 @@
   display: flex;
   gap: 0.5rem;
   height: fit-content;
+  --individual-card-size: min(35vw, 52.5rem);
 
   .activeImageDisplay {
     .active {
@@ -46,7 +47,7 @@
   }
 
   @include breakpoint(large) {
-    --individual-card-size: 70vw;
+    --individual-card-size: min(70vw, 42.5rem);
   }
   @include breakpoint(medium) {
     display: none;

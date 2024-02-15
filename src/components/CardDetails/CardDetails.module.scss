@@ -1,34 +1,38 @@
 @use "../../scss/abstracts/breakpoints" as *;
 
 .main {
-  margin: 3.5rem 1rem;
   display: flex;
-  flex-wrap: wrap-reverse;
   justify-content: center;
   gap: 3.5rem;
+  margin: 3.5rem auto;
+  padding: 0 1rem;
+  max-width: 118rem;
+
   .text {
-    font-size: var(--f-size-1);
     color: var(--clr-gray-4);
-    max-width: 49rem;
-    margin-top: 5rem;
-    line-height: 2.6rem;
-
-    @include breakpoint(large) {
-      margin-top: 3rem;
-      font-size: 1.3rem;
-    }
+    font-size: clamp(1.25rem, -0.558rem + 2.0089vw, var(--f-size-1));
+    margin-top: clamp(3rem, -3.4286rem + 7.1429vw, 5rem);
+    line-height: 2.625rem;
   }
-}
 
-@include breakpoint(medium) {
-  .main {
-    width: 90vw;
-    margin: auto;
-    gap: 1rem;
+  @include breakpoint(large) {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    width: min-content;
+    padding: 0;
 
     .text {
-      font-size: 1rem;
-      line-height: 1.8rem;
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+  }
+  @include breakpoint(medium) {
+    width: 90vw;
+    margin: 2rem auto;
+    gap: 2.5rem;
+
+    .text {
+      line-height: 2rem;
     }
   }
 }
