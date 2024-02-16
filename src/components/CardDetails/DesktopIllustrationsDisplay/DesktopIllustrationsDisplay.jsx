@@ -1,8 +1,8 @@
 import { useState } from "react"
 import { Card } from "../../Card/"
-import styles from "./IllustrationsDisplay.module.scss"
+import styles from "./DesktopIllustrationsDisplay.module.scss"
 
-const IllustrationsDisplay = ({ storyDetails }) => {
+const DesktopIllustrationsDisplay = ({ storyDetails }) => {
   const [activeImgIdx, setActiveImgIdx] = useState(0)
 
   const handleImgChange = (index) => {
@@ -63,4 +63,4 @@ const IllustrationsDisplay = ({ storyDetails }) => {
   )
 }
 
-export default IllustrationsDisplay
+export default DesktopIllustrationsDisplay

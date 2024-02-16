@@ -76,15 +76,12 @@
 @include breakpoint(small) {
   .hero {
     max-width: 95%;
-    --img-height: 15rem;
-    --hero-y-margin: 3rem;
-    --wrapper-gap: 0.5rem;
-    --text-line-height: 0.75rem;
-  }
-}
-@include breakpoint(xsmall) {
-  .hero {
+    --hero-y-margin: 2.5rem;
+
     .wrapper {
+      width: 70%;
+      margin: auto;
+
       img {
         width: 100%;
         height: auto;
@@ -97,6 +94,13 @@
 
     .scroll {
       display: none;
+    }
+  }
+}
+@include breakpoint(xsmall) {
+  .hero {
+    .wrapper {
+      width: 100%;
     }
   }
 }

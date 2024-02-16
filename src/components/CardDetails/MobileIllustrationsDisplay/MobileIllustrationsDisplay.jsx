@@ -1,6 +1,6 @@
 import { Fragment } from "react"
 import { Card } from "../../Card/"
-import styles from "./IllustrationsDisplay.module.scss"
+import styles from "./MobileIllustrationsDisplay.module.scss"
 
 const MobileIllustrationsDisplay = ({ storyDetails }) => {
   const order_of_images = [3, 1, 4, 2]

@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom"
 import { HashLink } from "react-router-hash-link"
-import styles from "./Menu.module.scss"
+import styles from "./NavItems.module.scss"
 
-const NavItems = ({ closeSideMenu }) => {
+const NavItems = ({ closeSideMenu, isMobile }) => {
   return (
     <>
-      <div className={styles.link}>
+      <div className={isMobile ? styles.mobileLink : styles.link}>
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? styles.active : "")}
@@ -15,13 +15,13 @@ const NavItems = ({ closeSideMenu }) => {
           {/* თავფურცელი */}
         </NavLink>
       </div>
-      <div className={styles.link}>
+      <div className={isMobile ? styles.mobileLink : styles.link}>
         <HashLink to="/#cards" onClick={closeSideMenu}>
           Jesse Tree Readings
           {/* იესეს ხის საკითხავი */}
         </HashLink>
       </div>
-      <div className={styles.link}>
+      <div className={isMobile ? styles.mobileLink : styles.link}>
         <NavLink
           to="/educators"
           className={({ isActive }) => (isActive ? styles.active : "")}
@@ -31,7 +31,7 @@ const NavItems = ({ closeSideMenu }) => {
           {/* განმანათლებლისათვის */}
         </NavLink>
       </div>
-      <div className={styles.link}>
+      <div className={isMobile ? styles.mobileLink : styles.link}>
         <NavLink
           to="/about"
           className={({ isActive }) => (isActive ? styles.active : "")}
@@ -41,13 +41,15 @@ const NavItems = ({ closeSideMenu }) => {
           {/* პროექტის შესახებ */}
         </NavLink>
       </div>
-      <Lang />
+      <Lang isMobile={isMobile} />
     </>
   )
 }
 
-const Lang = () => {
-  return <button className={styles.lang}>GE</button>
+const Lang = ({ isMobile }) => {
+  return (
+    <button className={isMobile ? styles.mobileLang : styles.lang}>GE</button>
+  )
 }
 
 export default NavItems
