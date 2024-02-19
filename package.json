@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "auto-text-size": "^0.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-outside-click-handler": "^1.3.0",
