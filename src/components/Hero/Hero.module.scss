@@ -1,82 +1,92 @@
 @use "../../scss/abstracts/breakpoints" as *;
 
 .hero {
-  --img-height: 39rem;
-  --hero-y-margin: 10rem;
-  --wrapper-gap: 8rem;
-  --text-gap: 2.6rem;
-  --text-line-height: 2.6rem;
-  --scroll-width: fit-content;
-  --scroll-margin: 10rem;
+  --hero-width: var(--page-width);
+  --img-width: calc(var(--hero-width) / 2.79);
+  --text-width: calc(var(--hero-width) / 1.78);
 
-  max-width: min(80%, var(--page-width));
-  margin: var(--hero-y-margin) auto;
+  --hero-top-margin: 10rem;
+  --hero-bottom-margin: calc(var(--hero-width) / 16.6);
+  --scroll-top-margin: calc(var(--hero-width) / 20.5);
+
+  --paragraph-gap: 2.6rem;
+  --font-size: calc(var(--text-width) / 30.8);
+  --text-line-height: calc(var(--text-width) / 21.5); // 2.6rem
+  --scroll-width: calc(var(--hero-width) / 14.6);
+
+  max-width: var(--hero-width);
+  margin: var(--hero-top-margin) auto var(--hero-bottom-margin) auto;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: var(--img-width);
+    }
+
+    .text {
+      width: var(--text-width);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: var(--paragraph-gap);
+
+      font-size: var(--font-size);
+      line-height: var(--text-line-height);
+      color: var(--clr-text-1);
+    }
+  }
 
   .scroll {
     width: fit-content;
     img {
       width: var(--scroll-width);
     }
-    margin: var(--scroll-margin) auto;
-  }
-}
-
-.wrapper {
-  display: flex;
-  align-items: center;
-  gap: var(--wrapper-gap);
-
-  img {
-    height: var(--img-height);
-  }
-
-  .text {
-    height: var(--img-height);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: var(--text-gap);
-
-    color: var(--clr-text-1);
-    line-height: var(--text-line-height);
+    margin: var(--scroll-top-margin) auto;
   }
 }
 
 @include breakpoint(xlarge) {
   .hero {
-    --img-height: 30rem;
-    --hero-y-margin: 7rem;
-    --text-gap: 1.5rem;
-    --text-line-height: 2rem;
-    --scroll-margin: 4rem;
+    --page-width: 82vw;
   }
 }
 @include breakpoint(large) {
   .hero {
-    --img-height: 25rem;
-    --hero-y-margin: 5rem;
-    --wrapper-gap: 2rem;
-    --text-gap: 1rem;
-    --text-line-height: 1.9rem;
-    --scroll-margin: 2rem;
-    --scroll-width: 4rem;
+    --page-width: 87vw;
+    --hero-top-margin: 5rem;
   }
 }
 @include breakpoint(medium) {
   .hero {
-    max-width: 85%;
-    --img-height: 20rem;
-    --hero-y-margin: 4rem;
-    --wrapper-gap: 1rem;
-    --text-gap: 0.5rem;
-    --text-line-height: 1.1rem;
-    --scroll-width: 3rem;
+    --hero-width: 85%;
+    --img-width: 20rem;
+    --scroll-width: 5rem;
+    --hero-top-margin: 3rem;
+    --scroll-top-margin: 4.8rem;
+    --hero-bottom-margin: 4rem;
+    --text-line-height: 1.5rem;
+
+    .wrapper {
+      flex-direction: column;
+      gap: 3rem;
+
+      .text {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: 1rem;
+      }
+    }
   }
 }
 @include breakpoint(small) {
   .hero {
-    max-width: 95%;
-    --hero-y-margin: 2.5rem;
+    --hero-width: 95%;
+    --hero-top-margin: 3.1rem;
 
     .wrapper {
       width: 70%;
