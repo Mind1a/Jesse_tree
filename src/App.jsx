@@ -1,9 +1,16 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, useLocation } from "react-router-dom"
 import { Home, Story, Educators, About, Error } from "./routes"
-import "./scss/style.scss"
 import { Layout } from "./components/Layout"
+import { useEffect } from "react"
+import "./scss/style.scss"
 
 const App = () => {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
   return (
     <div>
       <Routes>
