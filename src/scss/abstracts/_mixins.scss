@@ -43,7 +43,7 @@
 
     @if $hover-enabled {
       &:hover {
-        transform: scale(1.02);
+        transform: scale(1.015);
         cursor: pointer;
       }
     }
