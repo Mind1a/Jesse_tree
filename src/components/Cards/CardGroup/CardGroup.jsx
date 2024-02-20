@@ -10,36 +10,28 @@ const CardGroup = ({ title, stories, isMobile }) => {
       <div className={styles.cards}>
         {stories.map((story, index) => (
           <div className={styles.card} key={index}>
-            <CardLink title={title} story={story} isMobile={isMobile}>
+            <Link
+              to={`${headingToParam(title)}/${headingToParam(story.heading)}`}
+            >
               <Card
                 heading={story?.decorated_heading || story.heading}
                 subheading=""
                 illustration={story.illustration}
                 card="card_main"
               />
-            </CardLink>
+            </Link>
+            {isMobile && (
+              <Link
+                className={styles.more}
+                to={`${headingToParam(title)}/${headingToParam(story.heading)}`}
+              >
+                more
+              </Link>
+            )}
           </div>
         ))}
       </div>
     </section>
-  )
-}
-
-const CardLink = ({ children, title, story, isMobile }) => {
-  return isMobile ? (
-    <>
-      {children}
-      <Link
-        className={styles.more}
-        to={`${headingToParam(title)}/${headingToParam(story.heading)}`}
-      >
-        more
-      </Link>
-    </>
-  ) : (
-    <Link to={`${headingToParam(title)}/${headingToParam(story.heading)}`}>
-      {children}
-    </Link>
   )
 }
 
