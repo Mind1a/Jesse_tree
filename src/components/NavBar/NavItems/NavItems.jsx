@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom"
-import { HashLink } from "react-router-hash-link"
 import styles from "./NavItems.module.scss"
 
 const NavItems = ({ closeSideMenu, isMobile }) => {
@@ -16,10 +15,14 @@ const NavItems = ({ closeSideMenu, isMobile }) => {
         </NavLink>
       </div>
       <div className={isMobile ? styles.mobileLink : styles.link}>
-        <HashLink to="/#cards" onClick={closeSideMenu}>
+        <NavLink
+          to="/Readings"
+          className={({ isActive }) => (isActive ? styles.active : "")}
+          onClick={closeSideMenu}
+        >
           Jesse Tree Readings
           {/* იესეს ხის საკითხავი */}
-        </HashLink>
+        </NavLink>
       </div>
       <div className={isMobile ? styles.mobileLink : styles.link}>
         <NavLink

@@ -1,0 +1,31 @@
+.footer {
+  width: min(96vw, var(--main-page-width));
+  margin: 0 auto 4rem auto;
+  display: flex;
+  justify-content: space-between;
+  gap: clamp(2rem, 1.0881rem + 2.4521vw, 4rem);
+
+  div {
+    --padding-y: clamp(1.05rem, 0.5713rem + 1.2874vw, 2.1rem);
+    --padding-side: clamp(1rem, 0.5441rem + 1.2261vw, 2rem);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: clamp(2rem, 1.0881rem + 2.4521vw, 4rem);
+    padding: var(--padding-y) 0rem var(--padding-y) var(--padding-side);
+    font-size: clamp(1rem, 0.4871rem + 1.3793vw, 2.125rem);
+    background-color: var(--clr-gray-1);
+
+    &:last-of-type {
+      text-align: right;
+      align-items: flex-end;
+      padding: var(--padding-y) var(--padding-side) var(--padding-y) 0rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--clr-blue-2);
+    }
+  }
+}
