@@ -1,5 +1,5 @@
 import { Routes, Route, useLocation } from "react-router-dom"
-import { Home, Story, Educators, About, Error } from "./routes"
+import { Home, Story, Educators, About, Error, Readings } from "./routes"
 import { Layout } from "./components/Layout"
 import { useEffect } from "react"
 import "./scss/style.scss"
@@ -16,6 +16,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="Readings" element={<Readings />} />
           <Route path="/:stories/:story" element={<Story />} />
           <Route path="Educators" element={<Educators />} />
           <Route path="About" element={<About />} />

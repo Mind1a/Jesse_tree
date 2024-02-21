@@ -108,7 +108,7 @@
 
 @mixin aboutEducatorsLayout {
   max-width: min(85%, var(--page-width));
-  margin: clamp(2.925rem, 1.7511rem + 5.8696vi, 6.3rem) auto;
+  margin: clamp(2.925rem, 0.5827rem + 6.2462vw, 8rem) auto;
   color: var(--clr-text-2);
 
   font-size: clamp(1rem, 0.6522rem + 1.7391vi, var(--f-size-2));
