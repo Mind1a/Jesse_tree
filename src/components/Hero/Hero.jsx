@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styles from "./Hero.module.scss"
 
 const Hero = () => {
@@ -26,12 +27,27 @@ const Hero = () => {
         </div>
       </div>
 
+      <MoreReadings />
+
       <div className={styles.scroll}>
         <a href="#cards">
           <img src="/assets/icons/arrow.svg" />
         </a>
       </div>
     </section>
+  )
+}
+
+const MoreReadings = () => {
+  return (
+    <div className={styles.readingsContainer}>
+      <Link to="/Readings">
+        <div className={styles.readings}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          excepturi maiores deleniti inventore iure dolor! Architecto omnis...
+        </div>
+      </Link>
+    </div>
   )
 }
 
