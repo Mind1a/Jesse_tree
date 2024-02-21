@@ -1,12 +1,21 @@
 import { Link } from "react-router-dom"
+import { useMatchMedia, breakpoint } from "../../hooks"
 import styles from "./Hero.module.scss"
 
 const Hero = () => {
+  const isSmallScreen = useMatchMedia(breakpoint("max").medium)
+
   return (
     <section className={styles.hero}>
       <div className={styles.wrapper}>
         <div className={styles.imgContainer}>
-          <img src="/assets/icons/advent.svg" />
+          <img
+            src={
+              isSmallScreen
+                ? "/assets/icons/advent_mobile.svg"
+                : "/assets/icons/advent.svg"
+            }
+          />
         </div>
         <div className={styles.text}>
           <p>
