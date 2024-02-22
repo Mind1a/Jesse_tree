@@ -1,15 +1,17 @@
-import styles from "./NavBar.module.scss"
 import { TopMenu } from "./TopMenu"
 import { SideMenu } from "./SideMenu"
+import { useMatchMedia, breakpoint } from "../../hooks"
+import styles from "./NavBar.module.scss"
 
 const NavBar = () => {
+  const isSmallScreen = useMatchMedia(breakpoint("max").medium)
+
   return (
     <>
       <header className={styles.header}>
         <div className={styles.wrapper}>
           <Logo />
-          <TopMenu />
-          <SideMenu />
+          {isSmallScreen ? <SideMenu /> : <TopMenu />}
         </div>
       </header>
     </>

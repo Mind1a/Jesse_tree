@@ -19,26 +19,20 @@ const SideMenu = () => {
   }, [toggleSideMenu])
 
   return (
-    <>
-      <div className={styles.menuWrapper}>
-        <OutsideClickHandler
-          onOutsideClick={() => toggleSideMenu && closeSideMenu()}
-        >
-          <img
-            onClick={() => setToggleSideMenu((prev) => !prev)}
-            className={`${styles.burger} ${
-              toggleSideMenu && styles.openburger
-            }`}
-            src="/assets/icons/burger.svg"
-          />
-          {toggleSideMenu && (
-            <nav className={styles.sideNav}>
-              <NavItems closeSideMenu={closeSideMenu} isMobile={true} />
-            </nav>
-          )}
-        </OutsideClickHandler>
-      </div>
-    </>
+    <OutsideClickHandler
+      onOutsideClick={() => toggleSideMenu && closeSideMenu()}
+    >
+      <img
+        onClick={() => setToggleSideMenu((prev) => !prev)}
+        className={`${styles.burger} ${toggleSideMenu && styles.openburger}`}
+        src="/assets/icons/burger.svg"
+      />
+      {toggleSideMenu && (
+        <nav className={styles.sideNav}>
+          <NavItems closeSideMenu={closeSideMenu} isMobile={true} />
+        </nav>
+      )}
+    </OutsideClickHandler>
   )
 }
 
