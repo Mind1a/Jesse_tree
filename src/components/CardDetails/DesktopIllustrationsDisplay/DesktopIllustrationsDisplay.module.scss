@@ -6,11 +6,6 @@
   height: fit-content;
   --individual-card-size: min(35vw, 52.5rem);
 
-  .activeImageDisplay {
-    .active {
-    }
-  }
-
   .side {
     display: flex;
     flex-direction: column;
@@ -48,8 +43,5 @@
 
   @include breakpoint(large) {
     --individual-card-size: min(70vw, 42.5rem);
-  }
-  @include breakpoint(medium) {
-    display: none;
   }
 }

@@ -19,9 +19,6 @@
     }
   }
 
-  @include breakpoint-min(medium) {
-    display: none;
-  }
   @include breakpoint(medium) {
     flex-wrap: wrap;
     flex-direction: row;

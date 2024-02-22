@@ -2,11 +2,13 @@ import { useParams } from "react-router-dom"
 import { getStoryDetailsByheading, paramToHeading } from "../../utils"
 import { NotFound } from "../NotFound"
 import { DesktopIllustrationsDisplay } from "./DesktopIllustrationsDisplay"
-import styles from "./CardDetails.module.scss"
 import { MobileIllustrationsDisplay } from "./MobileIllustrationsDisplay"
+import { useMatchMedia, breakpoint } from "../../hooks"
+import styles from "./CardDetails.module.scss"
 
 const CardDetails = () => {
   let { stories, story } = useParams()
+  const isSmallScreen = useMatchMedia(breakpoint("max").medium)
 
   const storyDetails = getStoryDetailsByheading(
     paramToHeading(stories),
@@ -20,8 +22,11 @@ const CardDetails = () => {
   return (
     <>
       <main className={styles.main}>
-        <DesktopIllustrationsDisplay storyDetails={storyDetails} />
-        <MobileIllustrationsDisplay storyDetails={storyDetails} />
+        {isSmallScreen ? (
+          <MobileIllustrationsDisplay storyDetails={storyDetails} />
+        ) : (
+          <DesktopIllustrationsDisplay storyDetails={storyDetails} />
+        )}
         <TextDisplay />
       </main>
     </>
