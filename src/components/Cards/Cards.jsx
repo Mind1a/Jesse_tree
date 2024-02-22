@@ -1,13 +1,19 @@
 import storiesData from "../../data"
-import styles from "./Cards.module.scss"
 import { DesktopCardsDisplay } from "./DesktopCardsDisplay"
 import { MobileCardsDisplay } from "./MobileCardsDisplay"
+import { useMatchMedia, breakpoint } from "../../hooks"
+import styles from "./Cards.module.scss"
 
 const Cards = () => {
+  const isSmallScreen = useMatchMedia(breakpoint("max").small)
+
   return (
     <main className={styles.main} id="cards">
-      <DesktopCardsDisplay storiesData={storiesData} />
-      <MobileCardsDisplay storiesData={storiesData} />
+      {isSmallScreen ? (
+        <MobileCardsDisplay storiesData={storiesData} />
+      ) : (
+        <DesktopCardsDisplay storiesData={storiesData} />
+      )}
     </main>
   )
 }
