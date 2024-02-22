@@ -4,7 +4,7 @@ import { useMatchMedia, breakpoint } from "../../hooks"
 import styles from "./NavBar.module.scss"
 
 const NavBar = () => {
-  const isSmallScreen = useMatchMedia(breakpoint("max").medium)
+  const isSmallScreen = useMatchMedia(breakpoint.max.medium)
 
   return (
     <>

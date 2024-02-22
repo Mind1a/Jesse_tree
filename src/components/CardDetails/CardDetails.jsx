@@ -8,7 +8,7 @@ import styles from "./CardDetails.module.scss"
 
 const CardDetails = () => {
   let { stories, story } = useParams()
-  const isSmallScreen = useMatchMedia(breakpoint("max").medium)
+  const isSmallScreen = useMatchMedia(breakpoint.max.medium)
 
   const storyDetails = getStoryDetailsByheading(
     paramToHeading(stories),
