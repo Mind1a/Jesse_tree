@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Card } from "../../Card/"
+import { Download, Print } from "../Actions"
 import styles from "./DesktopIllustrationsDisplay.module.scss"
 
 const DesktopIllustrationsDisplay = ({ storyDetails }) => {
@@ -55,8 +56,12 @@ const DesktopIllustrationsDisplay = ({ storyDetails }) => {
         })}
 
         <div className={styles.actions}>
-          <img src="/assets/icons/print.svg" className={styles.print} />
-          <img src="/assets/icons/download.svg" className={styles.download} />
+          <div className={styles.print}>
+            <Print heading={storyDetails.heading} img={activeImgIdx + 1} />
+          </div>
+          <div className={styles.download}>
+            <Download heading={storyDetails.heading} img={activeImgIdx + 1} />
+          </div>
         </div>
       </div>
     </section>

@@ -1,9 +1,11 @@
 import { Fragment } from "react"
 import { Card } from "../../Card/"
+import { Download } from "../Actions"
 import styles from "./MobileIllustrationsDisplay.module.scss"
 
 const MobileIllustrationsDisplay = ({ storyDetails }) => {
   const order_of_images = [3, 1, 4, 2]
+
   return (
     <section className={styles.mobileDisplay}>
       {order_of_images.map((order, index) => {
@@ -28,10 +30,9 @@ const MobileIllustrationsDisplay = ({ storyDetails }) => {
                     : "card_individual_active"
                 }
               />
-              <img
-                src="/assets/icons/download.svg"
-                className={styles.download}
-              />
+              <div className={styles.download}>
+                <Download heading={storyDetails.heading} img={order} />
+              </div>
             </div>
           </Fragment>
         )
