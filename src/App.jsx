@@ -12,7 +12,7 @@ const App = () => {
   }, [pathname])
 
   return (
-    <div>
+    <>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -23,7 +23,7 @@ const App = () => {
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
-    </div>
+    </>
   )
 }
 

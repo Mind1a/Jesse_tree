@@ -16,12 +16,10 @@
 
       padding: min(0.5rem, 2vw);
       align-self: flex-end;
+      cursor: pointer;
     }
   }
 
-  @include breakpoint-min(medium) {
-    display: none;
-  }
   @include breakpoint(medium) {
     flex-wrap: wrap;
     flex-direction: row;

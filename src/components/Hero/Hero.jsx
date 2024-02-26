@@ -3,7 +3,7 @@ import { useMatchMedia, breakpoint } from "../../hooks"
 import styles from "./Hero.module.scss"
 
 const Hero = () => {
-  const isSmallScreen = useMatchMedia(breakpoint("max").medium)
+  const isSmallScreen = useMatchMedia(breakpoint.max.medium)
 
   return (
     <section className={styles.hero}>
