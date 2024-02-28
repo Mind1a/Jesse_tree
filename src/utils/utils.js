@@ -40,5 +40,5 @@ export const getStoryDetailsByheading = (storiesHeading, storyHeading) => {
 }
 
 export const getPdfByHeading = (storyHeading, img) => {
-  return `/assets/pdf/${headingToParam(storyHeading)}/${img}.pdf`
+  return `/assets/pdf/individual/${headingToParam(storyHeading)}/${img}.pdf`
 }
