@@ -28,9 +28,9 @@ const SideMenu = () => {
         src="/assets/icons/burger.svg"
       />
       {toggleSideMenu && (
-        <nav className={styles.sideNav}>
+        <div className={styles.sideNav}>
           <NavItems closeSideMenu={closeSideMenu} isMobile={true} />
-        </nav>
+        </div>
       )}
     </OutsideClickHandler>
   )

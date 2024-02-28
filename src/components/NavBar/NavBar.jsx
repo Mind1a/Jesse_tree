@@ -1,5 +1,6 @@
-import { TopMenu } from "./TopMenu"
+import { Link } from "react-router-dom"
 import { SideMenu } from "./SideMenu"
+import { NavItems } from "./NavItems"
 import { useMatchMedia, breakpoint } from "../../hooks"
 import styles from "./NavBar.module.scss"
 
@@ -9,10 +10,10 @@ const NavBar = () => {
   return (
     <>
       <header className={styles.header}>
-        <div className={styles.wrapper}>
+        <nav className={styles.nav}>
           <Logo />
-          {isSmallScreen ? <SideMenu /> : <TopMenu />}
-        </div>
+          {isSmallScreen ? <SideMenu /> : <NavItems isMobile={false} />}
+        </nav>
       </header>
     </>
   )
@@ -20,9 +21,9 @@ const NavBar = () => {
 
 const Logo = () => {
   return (
-    <div>
+    <Link to="/">
       <img className={styles.logo} src="/assets/icons/logo.svg" />
-    </div>
+    </Link>
   )
 }
 

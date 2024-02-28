@@ -8,6 +8,7 @@
 
   padding: 0rem 2.2%;
   font-size: clamp(1rem, 1rem + 0.55vw, 2rem);
+  height: 2.7rem;
 
   a {
     height: 100%;
@@ -31,6 +32,7 @@
   letter-spacing: 0.4rem;
 
   padding: 0rem 0.2rem 2rem 0.6rem;
+  height: 3rem;
 }
 
 .mobileLink {
@@ -66,12 +68,14 @@
 @include breakpoint(large) {
   .link {
     font-size: 1.1rem;
+    height: 1.7rem;
   }
 
   .lang {
-    font-size: 1rem;
+    font-size: 1.4rem;
     letter-spacing: 0.2rem;
 
+    height: 1.9rem;
     padding: 0.15rem 0.2rem 0rem 0.4rem;
   }
 }
