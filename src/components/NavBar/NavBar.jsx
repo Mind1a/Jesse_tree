@@ -22,7 +22,11 @@ const NavBar = () => {
 const Logo = () => {
   return (
     <Link to="/">
-      <img className={styles.logo} src="/assets/icons/logo.svg" />
+      <img
+        className={styles.logo}
+        src="/assets/icons/logo.svg"
+        alt="Star of Bethlehem"
+      />
     </Link>
   )
 }

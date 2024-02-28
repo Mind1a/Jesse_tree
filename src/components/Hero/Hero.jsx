@@ -15,6 +15,7 @@ const Hero = () => {
                 ? "/assets/icons/advent_mobile.svg"
                 : "/assets/icons/advent.svg"
             }
+            alt="Advent Reading For The Jesse Tree"
           />
         </div>
         <div className={styles.text}>
@@ -40,7 +41,7 @@ const Hero = () => {
 
       <div className={styles.scroll}>
         <a href="#cards">
-          <img src="/assets/icons/arrow.svg" />
+          <img src="/assets/icons/arrow.svg" alt="scroll to stories" />
         </a>
       </div>
     </section>
