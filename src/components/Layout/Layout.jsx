@@ -8,21 +8,23 @@ const Layout = () => {
   const footerPaths = ["/", "/educators", "/about", "/Readings"]
 
   return (
-    <>
-      <div className={styles.layout}>
-        <div>
-          <NavBar />
-        </div>
-        <div>
-          <Outlet />
-        </div>
-        {footerPaths.includes(currentPath) && (
-          <div className={styles.footer}>
-            <Footer />
-          </div>
-        )}
+    <div className={styles.layout}>
+      <div>
+        <NavBar />
       </div>
-    </>
+      <div>
+        <Outlet />
+      </div>
+      <div
+        className={
+          footerPaths.includes(currentPath)
+            ? styles.footer
+            : styles.footer_story
+        }
+      >
+        <Footer />
+      </div>
+    </div>
   )
 }
 
