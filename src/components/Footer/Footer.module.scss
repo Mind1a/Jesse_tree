@@ -1,5 +1,6 @@
+@use "../../scss/abstracts/breakpoints" as *;
+
 .footer {
-  width: min(96vw, var(--main-page-width));
   margin: 0 auto 4rem auto;
   display: flex;
   justify-content: space-between;
@@ -26,6 +27,17 @@
     a {
       text-decoration: none;
       color: var(--clr-blue-2);
+
+      &:hover {
+        color: var(--clr-gray-4);
+        transition: 0.4s;
+      }
     }
+  }
+
+  @include breakpoint(small) {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0 auto 2rem auto;
   }
 }

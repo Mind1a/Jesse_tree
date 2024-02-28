@@ -23,14 +23,15 @@ const SideMenu = () => {
       onOutsideClick={() => toggleSideMenu && closeSideMenu()}
     >
       <img
+        alt="menu"
         onClick={() => setToggleSideMenu((prev) => !prev)}
         className={`${styles.burger} ${toggleSideMenu && styles.openburger}`}
         src="/assets/icons/burger.svg"
       />
       {toggleSideMenu && (
-        <nav className={styles.sideNav}>
+        <div className={styles.sideNav}>
           <NavItems closeSideMenu={closeSideMenu} isMobile={true} />
-        </nav>
+        </div>
       )}
     </OutsideClickHandler>
   )

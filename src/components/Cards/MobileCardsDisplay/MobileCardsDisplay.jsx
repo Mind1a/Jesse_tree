@@ -37,6 +37,7 @@ const MobileCardsDisplay = ({ storiesData }) => {
           >
             <img
               src="/assets/icons/arrow.svg"
+              alt="scroll to stories"
               style={{
                 transform:
                   visibleGroup >= titles.length - 1 ? "scaleY(-1)" : "",
