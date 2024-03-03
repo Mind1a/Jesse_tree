@@ -7,8 +7,12 @@
   border-radius: 2px 2px 0px 0px;
 
   padding: 0rem 2.2%;
-  font-size: clamp(1rem, 1rem + 0.55vw, 2rem);
+  font-size: clamp(1.5rem, 0rem + 1.6667vw, 2rem);
   height: 2.7rem;
+
+  &:lang(ka) {
+    padding: 0 0.5rem;
+  }
 
   a {
     height: 100%;
@@ -54,6 +58,12 @@
 
   &::after {
     content: url("/assets/icons/divider-line.svg");
+  }
+
+  @include breakpoint(xsmall) {
+    &:lang(ka) {
+      font-size: clamp(1.125rem, -0.0101rem + 7.5676vw, 2rem);
+    }
   }
 }
 

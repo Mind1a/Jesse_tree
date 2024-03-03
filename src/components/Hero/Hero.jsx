@@ -51,7 +51,7 @@ const Hero = () => {
 const MoreReadings = () => {
   return (
     <div className={styles.readingsContainer}>
-      <Link to="/Readings">
+      <Link to="/readings">
         <div className={styles.readings}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
           excepturi maiores deleniti inventore iure dolor! Architecto omnis...
