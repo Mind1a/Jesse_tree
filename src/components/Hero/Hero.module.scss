@@ -5,7 +5,7 @@
   --img-width: calc(var(--hero-width) / 2.79);
   --text-width: calc(var(--hero-width) / 1.78);
 
-  --hero-top-margin: 10rem;
+  --hero-top-margin: 6.9rem;
   --hero-bottom-margin: calc(var(--hero-width) / 30.6);
   --scroll-top-margin: calc(var(--hero-width) / 40.5);
 
@@ -36,6 +36,10 @@
       font-size: var(--font-size);
       line-height: var(--text-line-height);
       color: var(--clr-text-1);
+
+      &:lang(ka) {
+        --font-size: calc(var(--text-width) / 28);
+      }
     }
   }
 
