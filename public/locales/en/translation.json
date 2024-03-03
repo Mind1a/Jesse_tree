@@ -21,5 +21,12 @@
       "Book's Online Version",
       "Buy This Book"
     ]
+  },
+  "jesse_tree_readings": {
+    "heading": "What is Jesse Tree Readings?",
+    "text": {
+      "p1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt excepturi maiores deleniti inventore iure dolor! Architecto omnis, exercitationem debitis placeat ducimus facilis nihil nostrum porro officia illo accusantium praesentium quasi velit cupiditate magnam laudantium eius ipsum ipsa aliquam ipsam perferendis!",
+      "p2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat odio ut repellat repellendus perferendis corporis quaerat molestiae vel, laboriosam, nostrum sed ipsa optio accusantium magni incidunt. Tempora minus quis nihil dolorem earum laborum error ducimus ad, corporis alias temporibus sed, explicabo repellendus repellat dolore nisi deserunt."
+    }
   }
 }
