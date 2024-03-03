@@ -1,41 +1,63 @@
+import { Link } from "react-router-dom"
+import { useMatchMedia, breakpoint } from "../../hooks"
 import styles from "./Hero.module.scss"
-import { AutoTextSize } from "auto-text-size"
 
 const Hero = () => {
+  const isSmallScreen = useMatchMedia(breakpoint.max.medium)
+
   return (
     <section className={styles.hero}>
       <div className={styles.wrapper}>
         <div className={styles.imgContainer}>
-          <img src="/assets/icons/advent.svg" />
+          <img
+            src={
+              isSmallScreen
+                ? "/assets/icons/advent_mobile.svg"
+                : "/assets/icons/advent.svg"
+            }
+            alt="Advent Reading For The Jesse Tree"
+          />
         </div>
-        <AutoTextSize mode="box">
-          <div className={styles.text}>
-            <p>
-              Christmas is a special time. Every year, we celebrate the birth of
-              our Lord, God, and Savior Jesus Christ. After the fall of Adam and
-              Eve, the people of God were waiting for the Messiah, the chosen
-              one, who would become the king of Israel and lead them. For many
-              years, God prepared His faithful to welcome the Messiah, and one
-              night, in a place called Bethlehem, the promised one, Christ was
-              born.
-            </p>
+        <div className={styles.text}>
+          <p>
+            Christmas is a special time. Every year, we celebrate the birth of
+            our Lord, God, and Savior Jesus Christ. After the fall of Adam and
+            Eve, the people of God were waiting for the Messiah, the chosen one,
+            who would become the king of Israel and lead them. For many years,
+            God prepared His faithful to welcome the Messiah, and one night, in
+            a place called Bethlehem, the promised one, Christ was born.
+          </p>
 
-            <p>
-              The whole story of the Old Testament is about preparation to meet
-              Jesus. The narratives of Abraham, Isaac, Jacob, and Joseph tell us
-              something about Christ. On this website, you can prepare to meet
-              baby Jesus on the day of His birth.
-            </p>
-          </div>
-        </AutoTextSize>
+          <p>
+            The whole story of the Old Testament is about preparation to meet
+            Jesus. The narratives of Abraham, Isaac, Jacob, and Joseph tell us
+            something about Christ. On this website, you can prepare to meet
+            baby Jesus on the day of His birth.
+          </p>
+        </div>
       </div>
+
+      <MoreReadings />
 
       <div className={styles.scroll}>
         <a href="#cards">
-          <img src="/assets/icons/arrow.svg" />
+          <img src="/assets/icons/arrow.svg" alt="scroll to stories" />
         </a>
       </div>
     </section>
+  )
+}
+
+const MoreReadings = () => {
+  return (
+    <div className={styles.readingsContainer}>
+      <Link to="/Readings">
+        <div className={styles.readings}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          excepturi maiores deleniti inventore iure dolor! Architecto omnis...
+        </div>
+      </Link>
+    </div>
   )
 }
 

@@ -1,0 +1,20 @@
+@use "../../scss/abstracts/breakpoints" as *;
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .footer {
+    margin: auto auto 0 auto;
+    width: min(96vw, var(--main-page-width));
+  }
+
+  .footer_story {
+    @extend .footer;
+    @include breakpoint-min(large) {
+      width: min(100%, 118rem);
+      padding: 0 1rem;
+    }
+  }
+}

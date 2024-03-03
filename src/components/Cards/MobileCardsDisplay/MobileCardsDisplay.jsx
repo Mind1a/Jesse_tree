@@ -6,35 +6,46 @@ const MobileCardsDisplay = ({ storiesData }) => {
   const titles = Object.keys(storiesData)
   const [visibleGroup, setVisibleGroup] = useState(0)
 
-  const onScroll = (clickedScrollIndex) => {
-    if (clickedScrollIndex === visibleGroup) {
-      setVisibleGroup((prev) => prev + 1)
-    }
-  }
-
   return (
     <div className={styles.mobileDisplay}>
-      {Object.entries(storiesData).map(([title, stories], index) => {
-        return (
-          <div
-            key={title}
-            style={{ display: index <= visibleGroup ? "block" : "none" }}
-          >
-            <CardGroup title={title} stories={stories} isMobile={true} />
+      <div className={styles.groups}>
+        {Object.entries(storiesData).map(([title, stories], index) => {
+          return (
+            <div
+              key={title}
+              style={{ display: index <= visibleGroup ? "block" : "none" }}
+            >
+              <CardGroup title={title} stories={stories} isMobile={true} />
+            </div>
+          )
+        })}
+      </div>
 
-            {index < titles.length - 1 && (
-              <div className={styles.scroll}>
-                <a
-                  onClick={() => onScroll(index)}
-                  href={`#${titles[index + 1]}`}
-                >
-                  <img src="/assets/icons/arrow.svg" />
-                </a>
-              </div>
-            )}
-          </div>
-        )
-      })}
+      {titles.length > 1 && (
+        <div className={styles.scroll}>
+          <a
+            onClick={() =>
+              visibleGroup < titles.length
+                ? setVisibleGroup((prevVisibleGroup) => prevVisibleGroup + 1)
+                : null
+            }
+            href={
+              visibleGroup === titles.length
+                ? `#cards`
+                : `#${titles[visibleGroup]}`
+            }
+          >
+            <img
+              src="/assets/icons/arrow.svg"
+              alt="scroll to stories"
+              style={{
+                transform:
+                  visibleGroup >= titles.length - 1 ? "scaleY(-1)" : "",
+              }}
+            />
+          </a>
+        </div>
+      )}
     </div>
   )
 }

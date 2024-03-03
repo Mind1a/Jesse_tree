@@ -1,0 +1,20 @@
+.main {
+  max-width: min(85%, var(--page-width));
+  margin: clamp(2.925rem, 0.5827rem + 6.2462vw, 8rem) auto;
+  line-height: clamp(1.875rem, 1.5924rem + 1.413vi, 2.6875rem);
+
+  h1 {
+    font-size: clamp(1rem, 0.6087rem + 1.9565vi, 2.125rem);
+    color: var(--clr-text-2);
+    padding-bottom: clamp(0.3125rem, 0.0734rem + 1.1957vi, 1rem);
+  }
+
+  p {
+    font-size: clamp(1rem, 0.6522rem + 1.7391vi, var(--f-size-2));
+    color: var(--clr-text-1);
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

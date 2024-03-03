@@ -1,8 +1,10 @@
 @use "../../../scss/abstracts/breakpoints" as *;
 
 .mobileDisplay {
-  @include breakpoint-min(small) {
-    display: none;
+  .groups {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
   }
 
   .scroll {
