@@ -1,57 +1,52 @@
+import { useState } from "react"
 import { NavLink } from "react-router-dom"
+import { useTranslation } from "react-i18next"
 import styles from "./NavItems.module.scss"
 
 const NavItems = ({ closeSideMenu, isMobile }) => {
+  const { t, i18n } = useTranslation()
+  const routes = ["/", "readings", "educators", "about"]
+
   return (
     <>
-      <div className={isMobile ? styles.mobileLink : styles.link}>
-        <NavLink
-          to="/"
-          className={({ isActive }) => (isActive ? styles.active : "")}
-          onClick={closeSideMenu}
+      {t("navigation.links", { returnObjects: true }).map((link, i) => (
+        <div
+          key={link}
+          className={isMobile ? styles.mobileLink : styles.link}
+          lang={i18n.resolvedLanguage}
         >
-          home
-          {/* თავფურცელი */}
-        </NavLink>
-      </div>
-      <div className={isMobile ? styles.mobileLink : styles.link}>
-        <NavLink
-          to="/Readings"
-          className={({ isActive }) => (isActive ? styles.active : "")}
-          onClick={closeSideMenu}
-        >
-          Jesse Tree Readings
-          {/* იესეს ხის საკითხავი */}
-        </NavLink>
-      </div>
-      <div className={isMobile ? styles.mobileLink : styles.link}>
-        <NavLink
-          to="/educators"
-          className={({ isActive }) => (isActive ? styles.active : "")}
-          onClick={closeSideMenu}
-        >
-          For Educators
-          {/* განმანათლებლისათვის */}
-        </NavLink>
-      </div>
-      <div className={isMobile ? styles.mobileLink : styles.link}>
-        <NavLink
-          to="/about"
-          className={({ isActive }) => (isActive ? styles.active : "")}
-          onClick={closeSideMenu}
-        >
-          About
-          {/* პროექტის შესახებ */}
-        </NavLink>
-      </div>
+          <NavLink
+            to={routes[i]}
+            className={({ isActive }) => (isActive ? styles.active : "")}
+            onClick={closeSideMenu}
+          >
+            {link}
+          </NavLink>
+        </div>
+      ))}
       <Lang isMobile={isMobile} />
     </>
   )
 }
 
 const Lang = ({ isMobile }) => {
+  const { i18n } = useTranslation()
+  const [activeLang, setActiveLang] = useState(i18n.resolvedLanguage)
+
+  const switchToLang = activeLang === "en" ? "ka" : "en"
+
+  const handleLanguageChange = () => {
+    setActiveLang(switchToLang)
+    i18n.changeLanguage(switchToLang)
+  }
+
   return (
-    <button className={isMobile ? styles.mobileLang : styles.lang}>GE</button>
+    <button
+      className={isMobile ? styles.mobileLang : styles.lang}
+      onClick={handleLanguageChange}
+    >
+      {switchToLang === "en" ? "EN" : "GE"}
+    </button>
   )
 }
 
