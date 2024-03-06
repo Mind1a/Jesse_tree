@@ -33,5 +33,181 @@
       "p1": "ტერმინი “იესეს ხე” დაკავშირებულია დავით წინასწარმეტყველის მამის, იესეს სახელთან. ქრისტე, როგორც დავით მეფის გენეალოგიის გამგრძელებელი მხატვრულად მოიხსენიებოდა იესეს ხის ნაყოფად. წინასწარმეტყველი ესაია მომვალ მესიას შემდეგნაირად მოიხსენიებს:  „და გამოვიდეს კუერთხი ძირისაგან იესესსა და ყუავილი ძირისაგან აღმოჴდეს. და განისვენოს მის ზედა სულმან ღმრთისამან“ (ეს. 11:1)",
       "p2": "იესეს ხის საკითხავები მსოფლიოს სხვადასხვა მხარეში პოპულარული აქტივობაა ბავშვებისა და მოზარდებისთვის. შობის წინა პერიოდში ოჯახებსა და სამრევლო სკოლებში კითხულობენ ძველი აღთქმის სხვადასხვა მონაკვეთს, შემდეგ კი მსჯელობენ, თუ რას მოგვითხრობს ესა თუ ის მონაკვეთი ქრისტეს შესახებ. ბიბლიური მონაკვეთები იკითხება ყოველდღიურად ან ყოველკვირეულად."
     }
+  },
+  "storiesCategories": {
+    "ქრისტე სამყაროს შემოქმედი": {
+      "id": "Christ is the Creator of the World",
+      "stories": {
+        "სამყაროს შექმნა": {
+          "id": "The Creation of the World",
+          "subheading": "დაბადება 1-2:4",
+          "illustration": "/assets/images/card/The_Creation_of_the_World/3.svg",
+          "text": ""
+        },
+        "ადამიანის შექმნა": {
+          "id": "Creation of Man",
+          "subheading": "დაბადება 2:4-25",
+          "illustration": "/assets/images/card/Creation_of_Man/3.svg",
+          "text": ""
+        },
+        "სამოთხიდან განდევნა": {
+          "id": "Expulsion from Paradise",
+          "subheading": "დაბადება 3:1-24",
+          "illustration": "/assets/images/card/Expulsion_from_Paradise/3.svg",
+          "text": ""
+        }
+      }
+    },
+    "ქრისტე არის ჩვენი მხსნელი, რომელმაც თავი შესწირა ჩვენთვის": {
+      "id": "Christ is Our Savior Who Sacrificed Himself for Us",
+      "stories": {
+        "წარღვნა": {
+          "id": "Noah",
+          "subheading": "დაბადება 6:9-22; 7; 8",
+          "illustration": "/assets/images/card/Noah/3.svg",
+          "text": ""
+        },
+        "აბრაამი და ვარსკვლავებით მოჭედილი ცა": {
+          "id": "Abraham",
+          "decorated_heading": "აბრაამი და\nვარსკვლავებით\nმოჭედილი\nცა",
+          "subheading": "დაბადება 12:1-7; 15:1-6; 17:1-9",
+          "illustration": "/assets/images/card/Abraham/3.svg",
+          "text": ""
+        },
+        "აბრაამის ერთგულება": {
+          "id": "Sacrifice of Isaac",
+          "subheading": "დაბადება 22:1-18",
+          "illustration": "/assets/images/card/Sacrifice_of_Isaac/3.svg",
+          "text": ""
+        }
+      }
+    },
+    "ღვთისმშობელი, ჩვენი შუამავალი ქრისტესთან": {
+      "id": "Theotokos, Our Intercessor to Christ",
+      "stories": {
+        "იაკობის კიბე": {
+          "id": "Jacob's Ladder",
+          "subheading": "დაბადება 22 : 1-18",
+          "illustration": "/assets/images/card/Jacob's_Ladder/3.svg",
+          "text": ""
+        },
+        "იოსები და მისი ძმები": {
+          "id": "Joseph and his brothers",
+          "subheading": "დაბადება 37 : 3-35",
+          "illustration": "/assets/images/card/Joseph_and_his_brothers/3.svg",
+          "text": ""
+        },
+        "იოსების დაწინაურება": {
+          "id": "Joseph's elevation",
+          "subheading": "დაბადება 41, 42, 43, 45 : 1-16",
+          "illustration": "/assets/images/card/Joseph's_elevation/3.svg",
+          "text": ""
+        }
+      }
+    },
+    "ქრისტე ცოდვებიდან სათნოებამდე მიგვიყვანს": {
+      "id": "Christ Leads Us from Sins to Virtues",
+      "stories": {
+        "ჩვილი მოსე": {
+          "id": "Baby Moses",
+          "subheading": "გამოსვლა 1:8-22, 2:1-10",
+          "illustration": "/assets/images/card/Baby_Moses/3.svg",
+          "text": ""
+        },
+        "მოსე და ცეცხლმოკიდებული ბუჩქი": {
+          "id": "Moses and the Burning Bush",
+          "decorated_heading": "მოსე და\nცეცხლმოკიდებული\nბუჩქი",
+          "subheading": "გამოსვლა 3:1-20",
+          "illustration": "/assets/images/card/Moses_and_the_Burning_Bush/3.svg",
+          "text": ""
+        },
+        "ეგვიპტის ათი სასჯელი": {
+          "id": "Plagues",
+          "subheading": "გამოსვლა 6:29-7:6; 14-8:15; 11:1; 12:1",
+          "illustration": "/assets/images/card/Plagues/3.svg",
+          "text": ""
+        },
+        "ისრაელი გადის წითელ ზღვაზე": {
+          "id": "Israel passes thru the Red Sea",
+          "decorated_heading": "ისრაელი გადის წითელ\nზღვაზე",
+          "subheading": "გამოსვლა 13:20-22; 14; 15:1-19",
+          "illustration": "/assets/images/card/Israel_passes_thru_the_Red_Sea/3.svg",
+          "text": ""
+        },
+        "წყალი უდაბნოში": {
+          "id": "Water in the Wilderness",
+          "subheading": "გამოსვლა 15:20-16:1; 17:1-7",
+          "illustration": "/assets/images/card/Water_in_the_Wilderness/3.svg",
+          "text": ""
+        },
+        "ათი მცნება": {
+          "id": "Commandments",
+          "subheading": "გამოსვლა 24:12-18",
+          "illustration": "/assets/images/card/Commandments/3.svg",
+          "text": ""
+        },
+        "რუთი": {
+          "id": "Ruth",
+          "subheading": "რუთი 1-4",
+          "illustration": "/assets/images/card/Ruth/3.svg",
+          "text": ""
+        }
+      }
+    },
+    "ქრისტე არის ჩვენი მწყემსი და მეფე": {
+      "id": "Christ is Our Shepherd and King",
+      "stories": {
+        "დავითი - ცხებული მეფე": {
+          "id": "David the Anointed King",
+          "subheading": "პირველი მეფეთა 16:1-13",
+          "illustration": "/assets/images/card/David_the_Anointed_King/3.svg",
+          "text": ""
+        },
+        "დავითი და გოლიათი": {
+          "id": "David & Goliath",
+          "subheading": "პირველი მეფეთა 17:1-11, 32-54",
+          "illustration": "/assets/images/card/David_&_Goliath/3.svg",
+          "text": ""
+        },
+        "დავით მეფსალმუნე": {
+          "id": "David the Psalmist",
+          "subheading": "ფსალმუნნი 110",
+          "illustration": "/assets/images/card/David_the_Psalmist/3.svg",
+          "text": ""
+        }
+      }
+    },
+    "ჩვენ გვწამს ქრისტეს აღდგომა": {
+      "id": "We Believe in Christ's Resurrection",
+      "stories": {
+        "იონა წინასწარმეტყველი": {
+          "id": "Jonah the Prophet",
+          "subheading": "იონა წინასწარმეტყველი 1-4:11",
+          "illustration": "/assets/images/card/Jonah_the_Prophet/3.svg",
+          "text": ""
+        },
+        "ტობიასიმა თევზი დაიჭირა": {
+          "id": "Tobias",
+          "decorated_heading": "ტობიასიმა თევზი\nდაიჭირა",
+          "subheading": "ტობითი 6-9:6, 11:2-19, 12:6, 11-22",
+          "illustration": "/assets/images/card/Tobias/3.svg",
+          "text": ""
+        },
+        "გახარებული ნაწინასწარმეტყველები": {
+          "id": "Rejoicing Foretold",
+          "decorated_heading": "გახარებული\nნაწინასწარმეტყველები",
+          "subheading": "ესაია წინასწარმეტყველი 9:6-7; 11:1-10",
+          "illustration": "/assets/images/card/Rejoicing_Foretold/3.svg",
+          "text": ""
+        },
+        "დანიელის წინასწარმეტყველება": {
+          "id": "Daniel",
+          "decorated_heading": "დანიელის\nწინასწარმეტყველება",
+          "subheading": "დანიელ წინასწარმეტყველი 2:31-36, 44-45",
+          "illustration": "/assets/images/card/Daniel/3.svg",
+          "text": ""
+        }
+      }
+    }
   }
 }
