@@ -32,6 +32,11 @@
         transform: scale(1.02);
       }
     }
+
+    &:lang(ka) {
+      font-size: calc($illustration-size / 16.5);
+      line-height: calc($illustration-size / 15);
+    }
   }
 
   .illustration {
@@ -57,6 +62,10 @@
 
     bottom: calc($illustration-size / 25);
     right: calc($illustration-size / 9.5);
+
+    &:lang(ka) {
+      font-size: calc($illustration-size / 24.8);
+    }
   }
 }
 
