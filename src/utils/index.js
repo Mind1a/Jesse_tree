@@ -1,6 +1,6 @@
 export {
   headingToParam,
   paramToHeading,
-  getStoryDetailsByheading,
+  getStoryDetailsByParams,
   getPdfByHeading,
 } from "./utils"

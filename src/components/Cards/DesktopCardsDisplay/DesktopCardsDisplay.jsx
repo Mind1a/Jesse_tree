@@ -1,13 +1,13 @@
 import { CardGroup } from "../CardGroup/"
 import styles from "./DesktopCardsDisplay.module.scss"
 
-const DesktopCardsDisplay = ({ storiesData }) => {
+const DesktopCardsDisplay = ({ storiesCategories }) => {
   return (
     <div className={styles.desktopDisplay}>
-      {Object.entries(storiesData).map(([title, stories]) => (
+      {Object.entries(storiesCategories).map(([title, stories]) => (
         <CardGroup
           title={title}
-          stories={stories}
+          storiesCategory={stories}
           isMobile={false}
           key={title}
         />

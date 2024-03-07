@@ -2,20 +2,24 @@ import { useState } from "react"
 import { CardGroup } from "../CardGroup"
 import styles from "./MobileCardsDisplay.module.scss"
 
-const MobileCardsDisplay = ({ storiesData }) => {
-  const titles = Object.keys(storiesData)
+const MobileCardsDisplay = ({ storiesCategories }) => {
+  const titles = Object.keys(storiesCategories)
   const [visibleGroup, setVisibleGroup] = useState(0)
 
   return (
     <div className={styles.mobileDisplay}>
       <div className={styles.groups}>
-        {Object.entries(storiesData).map(([title, stories], index) => {
+        {Object.entries(storiesCategories).map(([title, stories], index) => {
           return (
             <div
               key={title}
               style={{ display: index <= visibleGroup ? "block" : "none" }}
             >
-              <CardGroup title={title} stories={stories} isMobile={true} />
+              <CardGroup
+                title={title}
+                storiesCategory={stories}
+                isMobile={true}
+              />
             </div>
           )
         })}

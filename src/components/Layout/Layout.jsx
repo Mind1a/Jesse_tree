@@ -5,7 +5,7 @@ import styles from "./Layout.module.scss"
 
 const Layout = () => {
   const { pathname: currentPath } = useLocation()
-  const footerPaths = ["/", "/educators", "/about", "/Readings"]
+  const footerPaths = ["/", "/educators", "/about", "/readings"]
 
   return (
     <div className={styles.layout}>

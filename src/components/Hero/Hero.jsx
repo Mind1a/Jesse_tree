@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom"
 import { useMatchMedia, breakpoint } from "../../hooks"
+import { useTranslation } from "react-i18next"
 import styles from "./Hero.module.scss"
 
 const Hero = () => {
+  const { t, i18n } = useTranslation()
   const isSmallScreen = useMatchMedia(breakpoint.max.medium)
 
   return (
@@ -12,28 +14,15 @@ const Hero = () => {
           <img
             src={
               isSmallScreen
-                ? "/assets/icons/advent_mobile.svg"
-                : "/assets/icons/advent.svg"
+                ? `/assets/icons/${t("hero.img.mobile")}`
+                : `/assets/icons/${t("hero.img.desktop")}`
             }
             alt="Advent Reading For The Jesse Tree"
           />
         </div>
-        <div className={styles.text}>
-          <p>
-            Christmas is a special time. Every year, we celebrate the birth of
-            our Lord, God, and Savior Jesus Christ. After the fall of Adam and
-            Eve, the people of God were waiting for the Messiah, the chosen one,
-            who would become the king of Israel and lead them. For many years,
-            God prepared His faithful to welcome the Messiah, and one night, in
-            a place called Bethlehem, the promised one, Christ was born.
-          </p>
-
-          <p>
-            The whole story of the Old Testament is about preparation to meet
-            Jesus. The narratives of Abraham, Isaac, Jacob, and Joseph tell us
-            something about Christ. On this website, you can prepare to meet
-            baby Jesus on the day of His birth.
-          </p>
+        <div className={styles.text} lang={i18n.resolvedLanguage}>
+          <p>{t("hero.text.p1")}</p>
+          <p>{t("hero.text.p2")}</p>
         </div>
       </div>
 
@@ -49,13 +38,11 @@ const Hero = () => {
 }
 
 const MoreReadings = () => {
+  const { t } = useTranslation()
   return (
     <div className={styles.readingsContainer}>
-      <Link to="/Readings">
-        <div className={styles.readings}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-          excepturi maiores deleniti inventore iure dolor! Architecto omnis...
-        </div>
+      <Link to="/readings">
+        <div className={styles.readings}>{t("hero.more")}</div>
       </Link>
     </div>
   )
