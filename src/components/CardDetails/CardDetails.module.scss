@@ -8,11 +8,28 @@
   padding: 0 1rem;
   max-width: 118rem;
 
-  .text {
+  .story {
     color: var(--clr-gray-4);
-    font-size: clamp(1.25rem, -0.558rem + 2.0089vw, var(--f-size-1));
-    margin-top: clamp(3rem, -3.4286rem + 7.1429vw, 5rem);
-    line-height: 2.625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .title {
+      color: var(--clr-blue-2);
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+
+    .verse,
+    .text {
+      font-size: clamp(1.25rem, -0.558rem + 2.0089vw, var(--f-size-1));
+      line-height: clamp(2.4rem, 1.6977rem + 0.7809vw, 2.625rem);
+    }
+
+    .verse {
+      text-align: right;
+      font-style: italic;
+    }
   }
 
   @include breakpoint(large) {
@@ -21,9 +38,11 @@
     width: min-content;
     padding: 0;
 
-    .text {
-      font-size: 1.5rem;
-      margin-top: 0;
+    .story {
+      .text,
+      .verse {
+        font-size: 1.5rem;
+      }
     }
   }
   @include breakpoint(medium) {
@@ -31,8 +50,19 @@
     margin: 2rem auto;
     gap: 2.5rem;
 
-    .text {
-      line-height: 2rem;
+    .story {
+      .text,
+      .verse {
+        line-height: 2rem;
+      }
+    }
+  }
+  @include breakpoint(small) {
+    .story {
+      .title {
+        font-size: clamp(1.5rem, 0.9937rem + 4.0506vw, 2.5rem);
+        line-height: clamp(1.5rem, 0.9937rem + 4.0506vw, 2.5rem);
+      }
     }
   }
 }
