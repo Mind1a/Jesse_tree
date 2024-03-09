@@ -58,7 +58,7 @@
     position: absolute;
     color: var(--clr-blue-2);
     font-size: calc($illustration-size / 22.8);
-    font-family: "MyriadPro-Regular";
+    font-family: "Sandro-Regular";
 
     bottom: calc($illustration-size / 25);
     right: calc($illustration-size / 9.5);
@@ -87,7 +87,7 @@
 
   .heading {
     position: absolute;
-    font-family: "MyriadPro-Regular";
+    font-family: "Sandro-Bold";
     font-size: calc($illustration-size / 25);
     color: var(--clr-blue-2);
     top: calc($illustration-size / 22);
@@ -111,7 +111,7 @@
     right: calc($illustration-size / 9.5);
     color: var(--clr-blue-2);
     font-size: calc($illustration-size / 25);
-    font-family: "MyriadPro-Regular";
+    font-family: "Sandro-Regular";
   }
 }
 

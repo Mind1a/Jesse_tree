@@ -35,8 +35,11 @@
   color: var(--clr-blue-2);
   letter-spacing: 0.4rem;
 
-  padding: 0rem 0.2rem 2rem 0.6rem;
+  padding: 0rem 0.2rem 0rem 0.6rem;
   height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobileLink {
@@ -86,6 +89,6 @@
     letter-spacing: 0.2rem;
 
     height: 1.9rem;
-    padding: 0.15rem 0.2rem 0rem 0.4rem;
+    padding: 0rem 0.2rem 0rem 0.4rem;
   }
 }
