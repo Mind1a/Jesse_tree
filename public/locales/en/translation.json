@@ -29,6 +29,10 @@
       "p2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat odio ut repellat repellendus perferendis corporis quaerat molestiae vel, laboriosam, nostrum sed ipsa optio accusantium magni incidunt. Tempora minus quis nihil dolorem earum laborum error ducimus ad, corporis alias temporibus sed, explicabo repellendus repellat dolore nisi deserunt."
     }
   },
+  "not_found": {
+    "message": "Page Not Found",
+    "link": "Go Home"
+  },
   "storiesCategories": {
     "Christ is the Creator of the World": {
       "id": "Christ is the Creator of the World",

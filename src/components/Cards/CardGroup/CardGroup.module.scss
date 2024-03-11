@@ -5,6 +5,7 @@
   max-width: inherit;
 
   .title {
+    font-family: "Sandro-Bold";
     font-size: clamp(1.75rem, 1.4457rem + 1.5217vi, var(--f-size-3));
     color: var(--clr-gray-4);
     min-height: 6rem;

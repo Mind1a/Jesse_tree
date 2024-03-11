@@ -8,12 +8,12 @@
     font-size: 8rem;
   }
   p:nth-child(2) {
-    font-size: var(--f-size-3);
+    font-size: clamp(2rem, 1.4485rem + 0.9804vw, 2.625rem);
     margin-bottom: 1.5rem;
   }
 
   a {
-    font-size: var(--f-size-1);
+    font-size: clamp(1.25rem, 0.7537rem + 0.8824vw, 1.8125rem);
     color: inherit;
   }
 }
