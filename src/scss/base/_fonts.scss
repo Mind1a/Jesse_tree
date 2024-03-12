@@ -4,13 +4,21 @@
 }
 
 @font-face {
-  font-family: "MyriadPro-Regular";
-  src: url("/assets/fonts/MYRIADPRO-REGULAR.woff");
+  font-family: "NotoSans-Regular";
+  src: url("/assets/fonts/NotoSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Sandro-Bold";
+  src: url("/assets/fonts/Sandro-Bold.otf");
+}
+
+@font-face {
+  font-family: "Sandro-Regular";
+  src: url("/assets/fonts/Sandro-Regular.otf");
 }
 
 *,
 body {
-  font-family: hack, sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: NotoSans-Regular, sans-serif;
 }

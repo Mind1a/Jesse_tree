@@ -11,15 +11,19 @@
 
   --paragraph-gap: 2.6rem;
   --font-size: calc(var(--text-width) / 30.8);
-  --text-line-height: calc(var(--text-width) / 21.5); // 2.6rem
+  --text-line-height: calc(var(--text-width) / 21.5);
   --scroll-width: calc(var(--hero-width) / 14.6);
 
   .wrapper {
     max-width: var(--hero-width);
     margin: var(--hero-top-margin) auto var(--hero-bottom-margin) auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+
+    &:lang(ka) {
+      align-items: center;
+    }
 
     img {
       width: var(--img-width);
@@ -102,6 +106,7 @@
 
     .wrapper {
       flex-direction: column;
+      align-items: center;
       gap: 3rem;
 
       .text {

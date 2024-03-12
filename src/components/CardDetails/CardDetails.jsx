@@ -31,19 +31,23 @@ const CardDetails = () => {
         ) : (
           <DesktopIllustrationsDisplay storyDetails={storyDetails} />
         )}
-        <TextDisplay text={storyDetails.text} />
+        <TextDisplay storyDetails={storyDetails} />
       </main>
     </>
   )
 }
 
-const TextDisplay = ({ text }) => {
+const TextDisplay = ({ storyDetails }) => {
   return (
-    <p className={styles.text}>
-      {text.trim()
-        ? text
-        : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacinia id risus eu tincidunt. Duis porttitor nunc a risus congue sollicitudin. In hac habitasse platea dictumst. Fusce nec velit libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris eu luctus nibh, id blandit tellus. Vestibulum dictum blandit nunc nec ultricies. Cras egestas commodo magna rhoncus lacinia. Sed condimentum efficitur turpis, nec bibendum leo aliquam eu. Quisque vitae sodales felis. Nulla facilisi."}
-    </p>
+    <div className={styles.story}>
+      <h1 className={styles.title}>{storyDetails?.heading}</h1>
+      <p className={styles.verse}>{storyDetails?.verse}</p>
+      <p className={styles.text}>
+        {storyDetails.text.trim()
+          ? storyDetails.text
+          : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacinia id risus eu tincidunt. Duis porttitor nunc a risus congue sollicitudin. In hac habitasse platea dictumst. Fusce nec velit libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris eu luctus nibh, id blandit tellus. Vestibulum dictum blandit nunc nec ultricies. Cras egestas commodo magna rhoncus lacinia. Sed condimentum efficitur turpis, nec bibendum leo aliquam eu. Quisque vitae sodales felis. Nulla facilisi."}
+      </p>
+    </div>
   )
 }
 

@@ -9,7 +9,7 @@ const Hero = () => {
 
   return (
     <section className={styles.hero}>
-      <div className={styles.wrapper}>
+      <div className={styles.wrapper} lang={i18n.resolvedLanguage}>
         <div className={styles.imgContainer}>
           <img
             src={
