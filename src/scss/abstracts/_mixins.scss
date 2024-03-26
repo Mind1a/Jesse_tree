@@ -34,8 +34,10 @@
     }
 
     &:lang(ka) {
+      font-family: "Sandro-Universal-Regular";
       font-size: calc($illustration-size / 16.5);
       line-height: calc($illustration-size / 15);
+      top: calc($illustration-size / 9);
     }
   }
 
