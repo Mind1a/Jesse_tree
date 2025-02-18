@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 const breakpoints = (minmax) => ({
   xsmall: `(${minmax}-width: 425px)`,
   small: `(${minmax}-width: 595px)`,
-  medium: `(${minmax}-width: 959px)`,
+  medium: `(${minmax}-width: 989px)`,
   large: `(${minmax}-width: 1439px)`,
   xlarge: `(${minmax}-width: 1900px)`,
 })
