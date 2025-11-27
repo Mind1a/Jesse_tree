@@ -118,9 +118,10 @@
       "stories": {
         "Baby Moses": {
           "id": "Baby Moses",
-          "subheading": "Exodus 1:8-22, 2:1-10",
+          "subheading": "Exodus 3:2, NKJV",
           "illustration": "/assets/images/card/Baby_Moses/3.svg",
-          "text": ""
+          "verse": "So she called his name Moses, saying, “Because I drew him out of the water",
+          "text": "A basket woven from reeds drifts along the river. Can you see the tiny baby inside? The artist has painted the very plants that grow in Egypt, so we know exactly where this is happening. The mother, who is not shown in the painting, took desperate measures to save her child. She placed her baby in the basket and let it float away. The infant reaches out with his hands, as if seeking help from a lonely world."
         },
         "Moses and the Burning Bush": {
           "id": "Moses and the Burning Bush",
