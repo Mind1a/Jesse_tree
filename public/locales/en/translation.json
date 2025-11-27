@@ -236,11 +236,13 @@
           "verse": "And I looked, and there in the firmament that was above the head of the cherubim, there appeared something like a sapphire stone, having the appearance of the likeness of a throne.",
           "text": "In the center of the image the artist has painted a royal throne. The throne is placed in the sky on a cloud. The painting is beautifully decorated. People can be seen below and they have their hands raised. They are looking up at the throne with a joyful expression."
         },
-        "Daniel": {
-          "id": "Daniel",
+        "An Idol on Clay Feet": {
+          "id": "An Idol on Clay Feet",
+          "decorated_heading": "An Idol on Clay \nFeet",
           "subheading": "Daniel 2:31-36, 44-45",
-          "illustration": "/assets/images/card/Daniel/3.svg",
-          "text": ""
+          "illustration": "/assets/images/card/An_Idol_on_Clay_Feet/3.svg",
+          "verse": "You watched while a stone was cut out without hands, which struck the image on its feet of iron and clay, and broke them in pieces.",
+          "text": "In the painting, we see a dialogue. Two people are talking to each other. Which one of them is the king? Naturally, the king is the one who is sitting on the chair. The king is dressed in luxurious robes and wearing a golden headband. In front of him stands the prophet Daniel who helps the king interpret his dream. In the dream, the king saw a huge statue that stood on feet of clay. The fragile clay crumbled and the statue fell to the ground where it once stood."
         }
       }
     }
