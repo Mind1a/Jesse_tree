@@ -53,12 +53,13 @@
           "verse": "So God created man in His own image; in the image of God He created him; male and female He created them.",
           "text": "The painting depicts Adam and Eve. Do you see the figures of a man and a woman? They are the first humans. In the painting, Adam and Eve are gazing at each other in astonishment. Their hands seem to reach out towards one another. The artist has attempted to capture the moment when two humans first laid eyes on each other. What do you think the first humans might have been thinking? Everything must have been so new and wondrous for them."
         },
-        "Expulsion from Paradise": {
-          "id": "Expulsion from Paradise",
-          "decorated_heading": "Expulsion from\nParadise",
-          "subheading": "Genesis 3:1-24",
-          "illustration": "/assets/images/card/Expulsion_from_Paradise/3.svg",
-          "text": ""
+        "Cast Out of Paradise": {
+          "id": "Cast Out of Paradise",
+          "decorated_heading": "Cast Out of\nParadise",
+          "subheading": "Genesis 3:24, NKJV",
+          "illustration": "/assets/images/card/Cast_Out_of_Paradise/3.svg",
+          "verse": "So He drove out the man; and He placed cherubim at the east of the garden of Eden, and a flaming sword which turned every way, to guard the way to the tree of life.",
+          "text": "In the scene of the expulsion from paradise, the artist depicted a snake looking at Adam and Eve. The snake looks kind of mean, doesn’t it? Adam is covering his face with his hand. He looks sad. It’s like he knows he made a big mistake. Eve is holding an apple and looking up, scared. Who do you think the artist painted with a flaming sword at the top of the picture? It’s the flaming sword that will now keep people from going back to the garden."
         }
       }
     },
