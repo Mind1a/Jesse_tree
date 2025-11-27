@@ -163,16 +163,19 @@
           "verse": "So he cried out to the Lord, and the Lord showed him a tree. When he cast it into the waters, the waters were made sweet.",
           "text": "In the painting, we see Moses again. He is holding his staff with both hands. Do you see the water flowing from the rock? This is the spring that miraculously appeared from the rock. In the lower part of the painting, the artist has painted people. They are looking in amazement at the miracle that has just happened before their eyes."
         },
-        "Commandments": {
-          "id": "Commandments",
-          "subheading": "Exodus 24:12-18",
-          "illustration": "/assets/images/card/Commandments/3.svg",
-          "text": ""
+        "On Mount Sinai": {
+          "id": "On Mount Sinais",
+          "decorated_heading": "On Mount Sinai",
+          "subheading": "Exodus 19:20, NKJV)",
+          "illustration": "/assets/images/card/On_Mount_Sinai/3.svg",
+          "verse": "Then the Lord came down upon Mount Sinai, on the top of the mountain. And the Lord called Moses to the top of the mountain, and Moses went up.",
+          "text": "Do you see the tall mountain? This is Mount Sinai. The artist has painted Moses on Mount Sinai. In Moses' hands, he holds two stone tablets. The Ten Commandments are engraved on these tablets. Clouds can be seen around him. The artist has even painted lightning. What can you see behind Moses, on his left? Yes, that's the spring that burst forth from the rock. We've already talked about this spring. On the other side, you can see a golden calf, foreshadowing the challenges that lie ahead."
         },
-        "Ruth": {
-          "id": "Ruth",
+        "Ruth with a Cone of Wheat": {
+          "id": "Ruth with a Cone of Wheat",
+          "decorated_heading": "Ruth with a Cone \nof Wheat",
           "subheading": "Ruth 2:2, NKJV",
-          "illustration": "/assets/images/card/Ruth/3.svg",
+          "illustration": "/assets/images/card/Ruth_with_a_cone_of_wheat/3.svg",
           "verse": "So Ruth the Moabitess said to Naomi, “Please let me go to the field, and glean heads of grain after him in whose sight I may find favor.” ",
           "text": "In the center of the painting, the artist has painted a figure of a woman. A woman who has faced difficult trials in life. Despite the difficulties, she has not lost her virtue. The painting shows us a kind and caring, but at the same time, a strong person. What is Ruth holding in her hand? It is a sheaf of wheat. The sheaf of wheat points to Ruth's industriousness."
         }
@@ -189,10 +192,11 @@
           "verse": "Then Samuel took the horn of oil and anointed him in the midst of his brothers; and the Spirit of the Lord came upon David from that day forward. So Samuel arose and went to Ramah. ",
           "text": "Who is this little boy? This is King David. He is wearing a white robe. Behind him stands a white sheep. The sheep is looking at us and David is kneeling and looking forward. In front of David, the artist has painted the prophet Samuel. Samuel is anointing David with oil. In this painting, Samuel is crowning the young David as king."
         },
-        "David & Goliath": {
-          "id": "David & Goliath",
+        "David's Victory": {
+          "id": "David's Victory",
+          "decorated_heading": "David's Victory",
           "subheading": "1 Samuel 17:50, NKJV",
-          "illustration": "/assets/images/card/David_&_Goliath/3.svg",
+          "illustration": "/assets/images/card/David's_victory/3.svg",
           "verse": "So David prevailed over the Philistine with a sling and a stone, and struck the Philistine and killed him. But there was no sword in the hand of David",
           "text": "In the painting, we see Goliath. He is so big that his image takes up a significant part of the painting. He is wearing a warrior's helmet. He also has a shield and a sword. With this image, the artist wants to show us that Goliath is afraid of nothing. Next to him is David. What is David holding in his hand? This is David's weapon: David's sling. David looks very small next to Goliath. David has neither a helmet, nor a shield, nor a sword. David is also not afraid of anything. The image suggests that you can fight and even defeat someone much bigger than you, who at first glance seems invincible."
         },
@@ -208,10 +212,11 @@
     "We Believe in Christ's Resurrection": {
       "id": "We Believe in Christ's Resurrection",
       "stories": {
-        "Jonah the Prophet": {
-          "id": "Jonah the Prophet",
+        "Jonah in the Belly of the Whale": {
+          "id": "Jonah in the Belly of the Whale",
+          "decorated_heading": "Jonah in the Belly \nof the Whale",
           "subheading": "Jonah 1:17, NKJV",
-          "illustration": "/assets/images/card/Jonah_the_Prophet/3.svg",
+          "illustration": "/assets/images/card/Jonah_in_the_Belly_of_the_Whale/3.svg",
           "verse": "Now the Lord had prepared a great fish to swallow Jonah. And Jonah was in the belly of the fish three days and three nights.",
           "text": "The entire space of the painting, almost to the very end, is covered by waves. This is a vast sea. What is painted in the middle of the painting? In the middle of the painting, we see a man who has been swallowed by a whale. He is now sitting in the whale's belly. This is the prophet Jonah. Jonah has one hand to his face. With this, the artist suggests that he is in thought. He has a worried expression, and we understand that he is in great trouble."
         },
