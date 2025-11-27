@@ -37,18 +37,21 @@
     "Christ is the Creator of the World": {
       "id": "Christ is the Creator of the World",
       "stories": {
-        "The Creation of the World": {
-          "id": "The Creation of the World",
-          "decorated_heading": "The Creation of\nthe World",
-          "subheading": "Genesis 1-2:4",
-          "illustration": "/assets/images/card/The_Creation_of_the_World/3.svg",
-          "text": ""
+        "Creation of the World": {
+          "id": "Creation of the World",
+          "decorated_heading": "Creation of\nthe World",
+          "subheading": "Genesis 1:31, NKJV",
+          "illustration": "/assets/images/card/Creation_of_the_World/3.svg",
+          "verse": "Then God saw everything that He had made, and indeed it was very good. So the evening and the morning were the sixth day.",
+          "text": "In the beginning, God created everything! The picture shows the world right after God made it. Do you see the big, yellow sun? It came into being by the power of God’s words and filled the whole world with light. Beside the sun, you can see our Earth. On the Earth, there is a big tree with a fish swimming in the water, a bird flying in the sky, and an animal standing on the ground. it seems like the artist forgot something in this picture! What do you think the artist should have drawn? Probably, people. But the thing is that people didn't exist yet! God created people later."
         },
-        "Creation of Man": {
-          "id": "Creation of Man",
-          "subheading": "Genesis 2:4-25",
-          "illustration": "/assets/images/card/Creation_of_Man/3.svg",
-          "text": ""
+        "The Very First People": {
+          "id": "The Very First People",
+          "decorated_heading": "The Very First\n People",
+          "subheading": "Genesis 1:27, NKJV",
+          "illustration": "/assets/images/card/The_Very_First_People/3.svg",
+          "verse": "So God created man in His own image; in the image of God He created him; male and female He created them.",
+          "text": "The painting depicts Adam and Eve. Do you see the figures of a man and a woman? They are the first humans. In the painting, Adam and Eve are gazing at each other in astonishment. Their hands seem to reach out towards one another. The artist has attempted to capture the moment when two humans first laid eyes on each other. What do you think the first humans might have been thinking? Everything must have been so new and wondrous for them."
         },
         "Expulsion from Paradise": {
           "id": "Expulsion from Paradise",
