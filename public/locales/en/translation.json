@@ -85,10 +85,10 @@
         "Abraham's Faithfulness": {
           "id": "Sacrifice of Isaac",
           "decorated_heading": "Abraham's \nFaithfulness",
-          "subheading": "Genesis 22:1-18",
+          "subheading": "Genesis 15:1, NKJV",
           "illustration": "/assets/images/card/Sacrifice_of_Isaac/3.svg",
-          "verse": "So He drove out the man; and He placed cherubim at the east of the garden of Eden, and a flaming sword which turned every way, to guard the way to the tree of life.",
-          "text": ""
+          "verse": "After these things the word of the Lord came to Abram in a vision, saying, “Do not be afraid, Abram. I am your shield, your exceedingly great reward",
+          "text": "The scene of Abraham’s big test is one of the most difficult paintings to create. The artist has to paint something very scary, yet despite such a dangerous story, there should be hope in the painting — hope that everything will be okay in the end.In the picture, we see Abraham, whom God asked to give his son, Isaac, as a gift. We see Isaac who is lying obediently on the altar. Who did the artist draw in the upper right corner? It's an angel who is giving a sign to Abraham. It's as if the angel is telling Abraham that everything is okay, that there is no need to sacrifice Isaac."
         }
       }
     },
@@ -112,7 +112,7 @@
           "text": "Here we see Joseph and his brothers. The brothers are talking to one another, some being occupied in thought.. Joseph is standing in the center of the painting. He is wearing special, colorful clothes. Joseph has his hands outstretched towards his brothers, as if he is ready to hug them all. But his brothers seem to be thinking about other things. What are Joseph's brothers thinking about? The painting seems to capture the moment when the brothers are starting to have evil thoughts."
         },
         "Pharaoh's Dream": {
-          "id": "Joseph's elevation",
+          "id": "Pharaoh's Dream",
           "decorated_heading": "Pharaoh's Dream",
           "subheading": "Genesis 41, 42, 43, 45 : 1-16",
           "illustration": "/assets/images/card/Pharaoh's_Dream/3.svg",
@@ -139,11 +139,13 @@
           "verse": "And the Angel of the Lord appeared to him in a flame of fire from the midst of a bush. So he looked, and behold, the bush was burning with fire, but the bush was not consumed",
           "text": "In the painting, we see Moses. Do you see the bush painted in front of him? This is the same bush that is on fire but is not burning. Moses has one hand outstretched, and in this hand, Moses is holding a staff. He is covering his face with his other hand, as if trying to protect his eyes from the glow of the supernatural fire. I think he looks a little surprised. Maybe even a little scared. He is hearing a voice and trying to listen carefully to the words."
         },
-        "Plagues": {
-          "id": "Plagues",
-          "subheading": "Exodus 6:29-7:6; 14-8:15; 11:1; 12:1",
-          "illustration": "/assets/images/card/Plagues/3.svg",
-          "text": ""
+        "The Ten Punishments of Egypt": {
+          "id": "The Ten Punishments of Egypt",
+          "decorated_heading": "The Ten Punishments of Egypt",
+          "subheading": "Exodus 3:2, NKJV",
+          "illustration": "/assets/images/card/The_ten_punishments_of_egypt/3.svg",
+          "verse": "So Moses and Aaron came in to Pharaoh and said to him, “Thus says the Lord God of the Hebrews: ‘How long will you refuse to humble yourself before Me? Let My people go, that they may serve Me.",
+          "text": "Look at these astonished and troubled Egyptians. They are dressed in fine white linen. Why do you think these Egyptians are in such a state? The Egyptians are covering themselves trying to protect themselves from the wrath that has fallen upon them. From the sky, a rain of frogs descends. The painting is so vivid that it seems as if everything is in motion: the people, the frogs, and the sky."
         },
         "Israel passes thru the Red Sea": {
           "id": "Israel passes thru the Red Sea",
@@ -153,12 +155,13 @@
           "verse": "Then Moses stretched out his hand over the sea; and the Lord caused the sea to go back by a strong east wind all that night, and made the sea into dry land, and the waters were divided.",
           "text": "In the painting, we see Moses. Moses is standing on the seabed. On one hand, Moses is holding a staff, and the other is raised up. He is calling to his people to follow him. In the painting, we also see the waves of the sea that have formed a wall of water and created a passage. The artist has painted a fish that is looking out from the wall of water. The fish cannot understand what is happening. Neither it nor the other fish have ever seen anything like this."
         },
-        "Water in the Wilderness": {
-          "id": "Water in the Wilderness",
-          "decorated_heading": "Water in the\nWilderness",
-          "subheading": "Exodus 15:20-16:1; 17:1-7",
-          "illustration": "/assets/images/card/Water_in_the_Wilderness/3.svg",
-          "text": ""
+        "Spring in the Desert": {
+          "id": "Spring in the Desert",
+          "decorated_heading": "Spring in the \nDesert",
+          "subheading": "Exodus 15:25, NKJV",
+          "illustration": "/assets/images/card/Spring_in_the_Desert/3.svg",
+          "verse": "So he cried out to the Lord, and the Lord showed him a tree. When he cast it into the waters, the waters were made sweet.",
+          "text": "In the painting, we see Moses again. He is holding his staff with both hands. Do you see the water flowing from the rock? This is the spring that miraculously appeared from the rock. In the lower part of the painting, the artist has painted people. They are looking in amazement at the miracle that has just happened before their eyes."
         },
         "Commandments": {
           "id": "Commandments",
