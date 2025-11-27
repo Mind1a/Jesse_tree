@@ -181,13 +181,15 @@
           "id": "David & Goliath",
           "subheading": "1 Samuel 17:1-11, 32-54",
           "illustration": "/assets/images/card/David_&_Goliath/3.svg",
+
           "text": ""
         },
         "David the Psalmist": {
           "id": "David the Psalmist",
-          "subheading": "Psalm 110",
+          "subheading": "2 Samuel 6:5, NKJV",
           "illustration": "/assets/images/card/David_the_Psalmist/3.svg",
-          "text": ""
+          "verse": "Then David and all the house of Israel played music before the Lord on all kinds of instruments of fir wood, on harps, on stringed instruments, on tambourines, on sistrums, and on cymbals.",
+          "text": "Painters usually depict kings on horseback, in battle armor. Often on the battlefield, sometimes in a luxurious palace with their subjects, or against the backdrop of a fortress. But in this painting, we see a king with a musical instrument — inspired and contemplative. His head is slightly bowed. His hands are touching the strings of the musical instrument. In the painting, we see a king who has gone through many trials. There were heroic deeds in his life and mistakes. We see a king who has acquired wisdom and is ready to share his wisdom with others."
         }
       }
     },
