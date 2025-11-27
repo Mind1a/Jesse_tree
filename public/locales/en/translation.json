@@ -66,11 +66,13 @@
     "Christ is Our Savior Who Sacrificed Himself for Us": {
       "id": "Christ is Our Savior Who Sacrificed Himself for Us",
       "stories": {
-        "Noah": {
-          "id": "Noah",
-          "subheading": "Genesis 6:9-22; 7; 8",
-          "illustration": "/assets/images/card/Noah/3.svg",
-          "text": ""
+        "The Flood": {
+          "id": "The Flood",
+          "decorated_heading": "The Flood",
+          "subheading": "Genesis 8:1, NKJV",
+          "illustration": "/assets/images/card/The_Flood/3.svg",
+          "verse": "Then God remembered Noah, and every living thing, and all the animals that were with him in the ark. And God made a wind to pass over the earth, and the waters subsided.",
+          "text": "Have you ever heard of Noah's Ark? Noah's Ark was a huge boat where Noah's family and animals went to stay safe during a big flood. The picture shows Noah looking out over all the water, hoping for things to get better. There's a rainbow behind Noah, but he can't see it yet. It's like he's looking right at us from the picture. Can you see the bird in the picture? It's a dove and it has an olive branch in its beak. Noah can't see the dove yet either. In this picture he doesn't know that the flood is over. He doesn't know that his family and all the animals are safe now."
         },
         "Abraham": {
           "id": "Abraham",
