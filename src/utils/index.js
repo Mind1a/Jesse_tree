@@ -3,4 +3,5 @@ export {
   paramToHeading,
   getStoryDetailsByParams,
   getPdfByHeading,
+  getIllustrationSlug,
 } from "./utils"

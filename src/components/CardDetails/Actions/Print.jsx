@@ -1,8 +1,8 @@
 import { getPdfByHeading } from "../../../utils"
 
-const Print = ({ heading, img }) => {
+const Print = ({ heading, img, illustration }) => {
   const handlePrint = () => {
-    const pdfPath = getPdfByHeading(heading, img)
+    const pdfPath = getPdfByHeading(heading, img, illustration)
     const newWindow = window.open(pdfPath, "")
 
     if (newWindow) {

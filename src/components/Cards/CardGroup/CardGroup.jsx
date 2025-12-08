@@ -12,9 +12,16 @@ const CardGroup = ({ title, storiesCategory, isMobile }) => {
       <div className={styles.cards}>
         {Object.entries(storiesCategory.stories).map(
           ([storyHeading, storyDetails], index) => {
-            storyURL = `${headingToParam(storiesCategory.id)}/${headingToParam(
-              storyDetails.id
-            )}`
+            const illustrationPath = storyDetails?.illustration || ""
+            const illustrationParts = illustrationPath
+              .split("/")
+              .filter(Boolean)
+            const illustrationSlug =
+              illustrationParts.length >= 4 ? illustrationParts[3] : null
+
+            storyURL = `${headingToParam(storiesCategory.id)}/${
+              illustrationSlug || headingToParam(storyDetails.id)
+            }`
 
             return (
               <div className={styles.card} key={index}>

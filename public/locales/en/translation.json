@@ -37,48 +37,58 @@
     "Christ is the Creator of the World": {
       "id": "Christ is the Creator of the World",
       "stories": {
-        "The Creation of the World": {
-          "id": "The Creation of the World",
-          "decorated_heading": "The Creation of\nthe World",
-          "subheading": "Genesis 1-2:4",
-          "illustration": "/assets/images/card/The_Creation_of_the_World/3.svg",
-          "text": ""
+        "Creation of the World": {
+          "id": "Creation of the World",
+          "decorated_heading": "Creation of\nthe World",
+          "subheading": "Genesis 1:31, NKJV",
+          "illustration": "/assets/images/card/Creation_of_the_World/3.svg",
+          "verse": "Then God saw everything that He had made, and indeed it was very good. So the evening and the morning were the sixth day.",
+          "text": "In the beginning, God created everything! The picture shows the world right after God made it. Do you see the big, yellow sun? It came into being by the power of God’s words and filled the whole world with light. Beside the sun, you can see our Earth. On the Earth, there is a big tree with a fish swimming in the water, a bird flying in the sky, and an animal standing on the ground. it seems like the artist forgot something in this picture! What do you think the artist should have drawn? Probably, people. But the thing is that people didn't exist yet! God created people later."
         },
-        "Creation of Man": {
-          "id": "Creation of Man",
-          "subheading": "Genesis 2:4-25",
-          "illustration": "/assets/images/card/Creation_of_Man/3.svg",
-          "text": ""
+        "The Very First People": {
+          "id": "The Very First People",
+          "decorated_heading": "The Very First\n People",
+          "subheading": "Genesis 1:27, NKJV",
+          "illustration": "/assets/images/card/The_Very_First_People/3.svg",
+          "verse": "So God created man in His own image; in the image of God He created him; male and female He created them.",
+          "text": "The painting depicts Adam and Eve. Do you see the figures of a man and a woman? They are the first humans. In the painting, Adam and Eve are gazing at each other in astonishment. Their hands seem to reach out towards one another. The artist has attempted to capture the moment when two humans first laid eyes on each other. What do you think the first humans might have been thinking? Everything must have been so new and wondrous for them."
         },
-        "Expulsion from Paradise": {
-          "id": "Expulsion from Paradise",
-          "decorated_heading": "Expulsion from\nParadise",
-          "subheading": "Genesis 3:1-24",
-          "illustration": "/assets/images/card/Expulsion_from_Paradise/3.svg",
-          "text": ""
+        "Cast Out of Paradise": {
+          "id": "Cast Out of Paradise",
+          "decorated_heading": "Cast Out of\nParadise",
+          "subheading": "Genesis 3:24, NKJV",
+          "illustration": "/assets/images/card/Cast_Out_of_Paradise/3.svg",
+          "verse": "So He drove out the man; and He placed cherubim at the east of the garden of Eden, and a flaming sword which turned every way, to guard the way to the tree of life.",
+          "text": "In the scene of the expulsion from paradise, the artist depicted a snake looking at Adam and Eve. The snake looks kind of mean, doesn’t it? Adam is covering his face with his hand. He looks sad. It’s like he knows he made a big mistake. Eve is holding an apple and looking up, scared. Who do you think the artist painted with a flaming sword at the top of the picture? It’s the flaming sword that will now keep people from going back to the garden."
         }
       }
     },
     "Christ is Our Savior Who Sacrificed Himself for Us": {
       "id": "Christ is Our Savior Who Sacrificed Himself for Us",
       "stories": {
-        "Noah": {
-          "id": "Noah",
-          "subheading": "Genesis 6:9-22; 7; 8",
-          "illustration": "/assets/images/card/Noah/3.svg",
-          "text": ""
+        "The Flood": {
+          "id": "The Flood",
+          "decorated_heading": "The Flood",
+          "subheading": "Genesis 8:1, NKJV",
+          "illustration": "/assets/images/card/The_Flood/3.svg",
+          "verse": "Then God remembered Noah, and every living thing, and all the animals that were with him in the ark. And God made a wind to pass over the earth, and the waters subsided.",
+          "text": "Have you ever heard of Noah's Ark? Noah's Ark was a huge boat where Noah's family and animals went to stay safe during a big flood. The picture shows Noah looking out over all the water, hoping for things to get better. There's a rainbow behind Noah, but he can't see it yet. It's like he's looking right at us from the picture. Can you see the bird in the picture? It's a dove and it has an olive branch in its beak. Noah can't see the dove yet either. In this picture he doesn't know that the flood is over. He doesn't know that his family and all the animals are safe now."
         },
-        "Abraham": {
-          "id": "Abraham",
-          "subheading": "Genesis 12:1-7; 15:1-6; 17:1-9",
-          "illustration": "/assets/images/card/Abraham/3.svg",
-          "text": ""
+        "Abraham and the Starry Sky": {
+          "id": "Abraham and the Starry Sky",
+          "decorated_heading": "Abraham and the starry sky",
+          "subheading": "Genesis 15:5, NKJV",
+          "illustration": "/assets/images/card/Abraham_and_the_Starry_Sky/3.svg",
+          "verse": "Then He brought him outside and said, “Look now toward heaven, and count the stars if you are able to number them.” And He said to him, “So shall your descendants be.”",
+          "text": "In this picture, we see Abraham looking up at the sky with a big smile. His hands are raised up, like he’s thanking God for something very special. Next to Abraham is his wife Sarah, holding a small baby. Do you know who that baby is? It’s Isaac, the baby that Abraham and Sarah wanted so much. The artist drew Abraham with a big, white beard because Abraham was very old when Isaac was born. At the top of the picture, we can see a sky full of stars."
         },
-        "Sacrifice of Isaac": {
+        "Abraham's Faithfulness": {
           "id": "Sacrifice of Isaac",
-          "subheading": "Genesis 22:1-18",
+          "decorated_heading": "Abraham's \nFaithfulness",
+          "subheading": "Genesis 15:1, NKJV",
           "illustration": "/assets/images/card/Sacrifice_of_Isaac/3.svg",
-          "text": ""
+          "verse": "After these things the word of the Lord came to Abram in a vision, saying, “Do not be afraid, Abram. I am your shield, your exceedingly great reward",
+          "text": "The scene of Abraham’s big test is one of the most difficult paintings to create. The artist has to paint something very scary, yet despite such a dangerous story, there should be hope in the painting — hope that everything will be okay in the end.In the picture, we see Abraham, whom God asked to give his son, Isaac, as a gift. We see Isaac who is lying obediently on the altar. Who did the artist draw in the upper right corner? It's an angel who is giving a sign to Abraham. It's as if the angel is telling Abraham that everything is okay, that there is no need to sacrifice Isaac."
         }
       }
     },
@@ -88,22 +98,26 @@
         "Jacob's Ladder": {
           "id": "Jacob's Ladder",
           "decorated_heading": "Jacob's\nLadder",
-          "subheading": "Genesis 22 : 1-18",
+          "subheading": "Genesis 15:1, NKJV",
           "illustration": "/assets/images/card/Jacob's_Ladder/3.svg",
-          "text": ""
+          "verse": "So he came to a certain place and stayed there all night, because the sun had set. And he took one of the stones of that place and put it at his head, and he lay down in that place to sleep. Then he dreamed, and behold, a ladder was set up on the earth, and its top reached to heaven; and there the angels of God were ascending and descending on it.",
+          "text": "In the picture, we see Jacob who has fallen asleep and is having a dream. The artist has only shown Jacob himself and the very beginning of his dream. See the ladder? It goes all the way up to the sky. At the top of the ladder there's a bright light. Soon, angels will appear on the ladder. The angels will be going up and down the ladder, but we can't see that in the picture yet. Everything is still to come"
         },
         "Joseph and his brothers": {
           "id": "Joseph and his brothers",
           "decorated_heading": "Joseph and his\nbrothers",
-          "subheading": "Genesis 37 : 3-35",
+          "subheading": "Genesis 15:1, NKJV",
           "illustration": "/assets/images/card/Joseph_and_his_brothers/3.svg",
-          "text": ""
+          "verse": "Now Israel loved Joseph more than all his children, because he was the son of his old age. Also he made him a tunic of many colors. But when his brothers saw that their father loved him more than all his brothers, they hated him and could not speak peaceably to him. ",
+          "text": "Here we see Joseph and his brothers. The brothers are talking to one another, some being occupied in thought.. Joseph is standing in the center of the painting. He is wearing special, colorful clothes. Joseph has his hands outstretched towards his brothers, as if he is ready to hug them all. But his brothers seem to be thinking about other things. What are Joseph's brothers thinking about? The painting seems to capture the moment when the brothers are starting to have evil thoughts."
         },
-        "Joseph's elevation": {
-          "id": "Joseph's elevation",
+        "Pharaoh's Dream": {
+          "id": "Pharaoh's Dream",
+          "decorated_heading": "Pharaoh's Dream",
           "subheading": "Genesis 41, 42, 43, 45 : 1-16",
-          "illustration": "/assets/images/card/Joseph's_elevation/3.svg",
-          "text": ""
+          "illustration": "/assets/images/card/Pharaoh's_Dream/3.svg",
+          "verse": "And Pharaoh said to Joseph, “See, I have set you over all the land of Egypt.” Then Pharaoh took his signet ring off his hand and put it on Joseph’s hand; and he clothed him in garments of fine linen and put a gold chain around his neck.",
+          "text": "We're looking at a picture of the Egyptian king, the Pharaoh. He's standing there looking really confused. The Pharaoh had a weird dream and he has no idea what it means. Can you see the dream the Pharaoh had? In it, he saw cows — some were really fat and others were skinny. He also saw a great, big harvest and then some empty wheat stalks. No one could figure out what the dream meant. But then Joseph, who isn't in this picture, explained it all and earned the respect of the Egyptian ruler."
         }
       }
     },
@@ -112,48 +126,58 @@
       "stories": {
         "Baby Moses": {
           "id": "Baby Moses",
-          "subheading": "Exodus 1:8-22, 2:1-10",
+          "subheading": "Exodus 3:2, NKJV",
           "illustration": "/assets/images/card/Baby_Moses/3.svg",
-          "text": ""
+          "verse": "So she called his name Moses, saying, “Because I drew him out of the water",
+          "text": "A basket woven from reeds drifts along the river. Can you see the tiny baby inside? The artist has painted the very plants that grow in Egypt, so we know exactly where this is happening. The mother, who is not shown in the painting, took desperate measures to save her child. She placed her baby in the basket and let it float away. The infant reaches out with his hands, as if seeking help from a lonely world."
         },
         "Moses and the Burning Bush": {
           "id": "Moses and the Burning Bush",
           "decorated_heading": "Moses and the\nBurning Bush",
-          "subheading": "Exodus 3:1-20",
+          "subheading": "Exodus 3:2, NKJV",
           "illustration": "/assets/images/card/Moses_and_the_Burning_Bush/3.svg",
-          "text": ""
+          "verse": "And the Angel of the Lord appeared to him in a flame of fire from the midst of a bush. So he looked, and behold, the bush was burning with fire, but the bush was not consumed",
+          "text": "In the painting, we see Moses. Do you see the bush painted in front of him? This is the same bush that is on fire but is not burning. Moses has one hand outstretched, and in this hand, Moses is holding a staff. He is covering his face with his other hand, as if trying to protect his eyes from the glow of the supernatural fire. I think he looks a little surprised. Maybe even a little scared. He is hearing a voice and trying to listen carefully to the words."
         },
-        "Plagues": {
-          "id": "Plagues",
-          "subheading": "Exodus 6:29-7:6; 14-8:15; 11:1; 12:1",
-          "illustration": "/assets/images/card/Plagues/3.svg",
-          "text": ""
+        "The Ten Punishments of Egypt": {
+          "id": "The Ten Punishments of Egypt",
+          "decorated_heading": "The Ten Punishments of Egypt",
+          "subheading": "Exodus 3:2, NKJV",
+          "illustration": "/assets/images/card/The_Ten_Punishments_of_Egypt/3.svg",
+          "verse": "So Moses and Aaron came in to Pharaoh and said to him, “Thus says the Lord God of the Hebrews: ‘How long will you refuse to humble yourself before Me? Let My people go, that they may serve Me.",
+          "text": "Look at these astonished and troubled Egyptians. They are dressed in fine white linen. Why do you think these Egyptians are in such a state? The Egyptians are covering themselves trying to protect themselves from the wrath that has fallen upon them. From the sky, a rain of frogs descends. The painting is so vivid that it seems as if everything is in motion: the people, the frogs, and the sky."
         },
         "Israel passes thru the Red Sea": {
           "id": "Israel passes thru the Red Sea",
           "decorated_heading": "Israel passes thru\nthe Red Sea",
-          "subheading": "Exodus 13:20-22; 14; 15:1-19",
+          "subheading": "Exodus 14:21, NKJV",
           "illustration": "/assets/images/card/Israel_passes_thru_the_Red_Sea/3.svg",
-          "text": ""
+          "verse": "Then Moses stretched out his hand over the sea; and the Lord caused the sea to go back by a strong east wind all that night, and made the sea into dry land, and the waters were divided.",
+          "text": "In the painting, we see Moses. Moses is standing on the seabed. On one hand, Moses is holding a staff, and the other is raised up. He is calling to his people to follow him. In the painting, we also see the waves of the sea that have formed a wall of water and created a passage. The artist has painted a fish that is looking out from the wall of water. The fish cannot understand what is happening. Neither it nor the other fish have ever seen anything like this."
         },
-        "Water in the Wilderness": {
-          "id": "Water in the Wilderness",
-          "decorated_heading": "Water in the\nWilderness",
-          "subheading": "Exodus 15:20-16:1; 17:1-7",
-          "illustration": "/assets/images/card/Water_in_the_Wilderness/3.svg",
-          "text": ""
+        "Spring in the Desert": {
+          "id": "Spring in the Desert",
+          "decorated_heading": "Spring in the \nDesert",
+          "subheading": "Exodus 15:25, NKJV",
+          "illustration": "/assets/images/card/Spring_in_the_Desert/3.svg",
+          "verse": "So he cried out to the Lord, and the Lord showed him a tree. When he cast it into the waters, the waters were made sweet.",
+          "text": "In the painting, we see Moses again. He is holding his staff with both hands. Do you see the water flowing from the rock? This is the spring that miraculously appeared from the rock. In the lower part of the painting, the artist has painted people. They are looking in amazement at the miracle that has just happened before their eyes."
         },
-        "Commandments": {
-          "id": "Commandments",
-          "subheading": "Exodus 24:12-18",
-          "illustration": "/assets/images/card/Commandments/3.svg",
-          "text": ""
+        "On Mount Sinai": {
+          "id": "On Mount Sinais",
+          "decorated_heading": "On Mount Sinai",
+          "subheading": "Exodus 19:20, NKJV)",
+          "illustration": "/assets/images/card/On_Mount_Sinai/3.svg",
+          "verse": "Then the Lord came down upon Mount Sinai, on the top of the mountain. And the Lord called Moses to the top of the mountain, and Moses went up.",
+          "text": "Do you see the tall mountain? This is Mount Sinai. The artist has painted Moses on Mount Sinai. In Moses' hands, he holds two stone tablets. The Ten Commandments are engraved on these tablets. Clouds can be seen around him. The artist has even painted lightning. What can you see behind Moses, on his left? Yes, that's the spring that burst forth from the rock. We've already talked about this spring. On the other side, you can see a golden calf, foreshadowing the challenges that lie ahead."
         },
-        "Ruth": {
-          "id": "Ruth",
-          "subheading": "Ruth chapters 1-4",
-          "illustration": "/assets/images/card/Ruth/3.svg",
-          "text": ""
+        "Ruth with a Cone of Wheat": {
+          "id": "Ruth with a Cone of Wheat",
+          "decorated_heading": "Ruth with a Cone \nof Wheat",
+          "subheading": "Ruth 2:2, NKJV",
+          "illustration": "/assets/images/card/Ruth_with_a_cone_of_wheat/3.svg",
+          "verse": "So Ruth the Moabitess said to Naomi, “Please let me go to the field, and glean heads of grain after him in whose sight I may find favor.” ",
+          "text": "In the center of the painting, the artist has painted a figure of a woman. A woman who has faced difficult trials in life. Despite the difficulties, she has not lost her virtue. The painting shows us a kind and caring, but at the same time, a strong person. What is Ruth holding in her hand? It is a sheaf of wheat. The sheaf of wheat points to Ruth's industriousness."
         }
       }
     },
@@ -163,50 +187,62 @@
         "David the Anointed King": {
           "id": "David the Anointed King",
           "decorated_heading": "David the\nAnointed King",
-          "subheading": "1 Samuel 16:1-13",
+          "subheading": "1 Samuel 16:13, NKJV",
           "illustration": "/assets/images/card/David_the_Anointed_King/3.svg",
-          "text": ""
+          "verse": "Then Samuel took the horn of oil and anointed him in the midst of his brothers; and the Spirit of the Lord came upon David from that day forward. So Samuel arose and went to Ramah. ",
+          "text": "Who is this little boy? This is King David. He is wearing a white robe. Behind him stands a white sheep. The sheep is looking at us and David is kneeling and looking forward. In front of David, the artist has painted the prophet Samuel. Samuel is anointing David with oil. In this painting, Samuel is crowning the young David as king."
         },
-        "David & Goliath": {
-          "id": "David & Goliath",
-          "subheading": "1 Samuel 17:1-11, 32-54",
-          "illustration": "/assets/images/card/David_&_Goliath/3.svg",
-          "text": ""
+        "David's Victory": {
+          "id": "David's Victory",
+          "decorated_heading": "David's Victory",
+          "subheading": "1 Samuel 17:50, NKJV",
+          "illustration": "/assets/images/card/David's_Victory/3.svg",
+          "verse": "So David prevailed over the Philistine with a sling and a stone, and struck the Philistine and killed him. But there was no sword in the hand of David",
+          "text": "In the painting, we see Goliath. He is so big that his image takes up a significant part of the painting. He is wearing a warrior's helmet. He also has a shield and a sword. With this image, the artist wants to show us that Goliath is afraid of nothing. Next to him is David. What is David holding in his hand? This is David's weapon: David's sling. David looks very small next to Goliath. David has neither a helmet, nor a shield, nor a sword. David is also not afraid of anything. The image suggests that you can fight and even defeat someone much bigger than you, who at first glance seems invincible."
         },
         "David the Psalmist": {
           "id": "David the Psalmist",
-          "subheading": "Psalm 110",
+          "subheading": "2 Samuel 6:5, NKJV",
           "illustration": "/assets/images/card/David_the_Psalmist/3.svg",
-          "text": ""
+          "verse": "Then David and all the house of Israel played music before the Lord on all kinds of instruments of fir wood, on harps, on stringed instruments, on tambourines, on sistrums, and on cymbals.",
+          "text": "Painters usually depict kings on horseback, in battle armor. Often on the battlefield, sometimes in a luxurious palace with their subjects, or against the backdrop of a fortress. But in this painting, we see a king with a musical instrument — inspired and contemplative. His head is slightly bowed. His hands are touching the strings of the musical instrument. In the painting, we see a king who has gone through many trials. There were heroic deeds in his life and mistakes. We see a king who has acquired wisdom and is ready to share his wisdom with others."
         }
       }
     },
     "We Believe in Christ's Resurrection": {
       "id": "We Believe in Christ's Resurrection",
       "stories": {
-        "Jonah the Prophet": {
-          "id": "Jonah the Prophet",
-          "subheading": "Jonah 1-4:11",
-          "illustration": "/assets/images/card/Jonah_the_Prophet/3.svg",
-          "text": ""
+        "Jonah in the Belly of the Whale": {
+          "id": "Jonah in the Belly of the Whale",
+          "decorated_heading": "Jonah in the Belly \nof the Whale",
+          "subheading": "Jonah 1:17, NKJV",
+          "illustration": "/assets/images/card/Jonah_in_the_Belly_of_the_Whale/3.svg",
+          "verse": "Now the Lord had prepared a great fish to swallow Jonah. And Jonah was in the belly of the fish three days and three nights.",
+          "text": "The entire space of the painting, almost to the very end, is covered by waves. This is a vast sea. What is painted in the middle of the painting? In the middle of the painting, we see a man who has been swallowed by a whale. He is now sitting in the whale's belly. This is the prophet Jonah. Jonah has one hand to his face. With this, the artist suggests that he is in thought. He has a worried expression, and we understand that he is in great trouble."
         },
-        "Tobias": {
-          "id": "Tobias",
-          "subheading": "Tobit 6-9:6, 11:2-19, 12:6, 11-22",
-          "illustration": "/assets/images/card/Tobias/3.svg",
-          "text": ""
+        "Tobias caught a fish": {
+          "id": "Tobias caught a fish",
+          "decorated_heading": "Tobias caught a \nfish",
+          "subheading": "Tobit 13:2, KJV",
+          "illustration": "/assets/images/card/Tobias_caught_a_fish/3.svg",
+          "verse": "Blessed be God for ever: and let all his angels praise him. Blessed be his name from everlasting to everlasting: for he hath had mercy on me in my affliction.",
+          "text": "In the painting, we see two figures and a fish that one of them is holding. This is Tobias. He is kneeling and looking at the fish with surprise. Then there is a figure standing. Despite the fact that the artist painted him without wings, this is an angel. The angel is leaning slightly towards Tobias and is saying something to him, explaining something. Tobias is listening to him attentively."
         },
-        "Rejoicing Foretold": {
-          "id": "Rejoicing Foretold",
-          "subheading": "Isaiah 9:6-7; 11:1-10",
-          "illustration": "/assets/images/card/Rejoicing_Foretold/3.svg",
-          "text": ""
+        "Rejoicing Prophesied": {
+          "id": "Rejoicing Prophesied",
+          "decorated_heading": "Rejoicing Prophesied",
+          "subheading": "Ezekiel 10:1, NKJV",
+          "illustration": "/assets/images/card/Rejoicing_Prophesied/3.svg",
+          "verse": "And I looked, and there in the firmament that was above the head of the cherubim, there appeared something like a sapphire stone, having the appearance of the likeness of a throne.",
+          "text": "In the center of the image the artist has painted a royal throne. The throne is placed in the sky on a cloud. The painting is beautifully decorated. People can be seen below and they have their hands raised. They are looking up at the throne with a joyful expression."
         },
-        "Daniel": {
-          "id": "Daniel",
-          "subheading": "Daniel 2:31-36, 44-45",
-          "illustration": "/assets/images/card/Daniel/3.svg",
-          "text": ""
+        "An Idol on Clay Feet": {
+          "id": "An Idol on Clay Feet",
+          "decorated_heading": "An Idol on Clay \nFeet",
+          "subheading": "Daniel 2:34, NKJV",
+          "illustration": "/assets/images/card/An_Idol_on_Clay_Feet/3.svg",
+          "verse": "You watched while a stone was cut out without hands, which struck the image on its feet of iron and clay, and broke them in pieces.",
+          "text": "In the painting, we see a dialogue. Two people are talking to each other. Which one of them is the king? Naturally, the king is the one who is sitting on the chair. The king is dressed in luxurious robes and wearing a golden headband. In front of him stands the prophet Daniel who helps the king interpret his dream. In the dream, the king saw a huge statue that stood on feet of clay. The fragile clay crumbled and the statue fell to the ground where it once stood."
         }
       }
     }
