@@ -1,5 +1,10 @@
-import { useParams } from "react-router-dom"
-import { getStoryDetailsByParams } from "../../utils"
+import { useEffect } from "react"
+import { useNavigate, useParams } from "react-router-dom"
+import {
+  getIllustrationSlug,
+  getStoryDetailsByParams,
+  headingToParam,
+} from "../../utils"
 import { NotFound } from "../NotFound"
 import { DesktopIllustrationsDisplay } from "./DesktopIllustrationsDisplay"
 import { MobileIllustrationsDisplay } from "./MobileIllustrationsDisplay"
@@ -10,6 +15,7 @@ import styles from "./CardDetails.module.scss"
 const CardDetails = () => {
   const { t } = useTranslation()
   let { stories, story } = useParams()
+  const navigate = useNavigate()
   const isSmallScreen = useMatchMedia(breakpoint.max.medium)
 
   const storiesCategories = t("storiesCategories", { returnObjects: true })
@@ -22,6 +28,16 @@ const CardDetails = () => {
   if (!storyDetails) {
     return <NotFound />
   }
+
+  useEffect(() => {
+    const canonicalSlug =
+      getIllustrationSlug(storyDetails.illustration) ||
+      headingToParam(storyDetails.id)
+
+    if (canonicalSlug && story !== canonicalSlug) {
+      navigate(`/${stories}/${canonicalSlug}`, { replace: true })
+    }
+  }, [story, stories, storyDetails, navigate])
 
   return (
     <>
