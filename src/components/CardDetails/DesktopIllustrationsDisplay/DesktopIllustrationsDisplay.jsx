@@ -57,10 +57,18 @@ const DesktopIllustrationsDisplay = ({ storyDetails }) => {
 
         <div className={styles.actions}>
           <div className={styles.print}>
-            <Print heading={storyDetails.id} img={activeImgIdx + 1} />
+            <Print
+              heading={storyDetails.id}
+              illustration={storyDetails.illustration}
+              img={activeImgIdx + 1}
+            />
           </div>
           <div className={styles.download}>
-            <Download heading={storyDetails.id} img={activeImgIdx + 1} />
+            <Download
+              heading={storyDetails.id}
+              illustration={storyDetails.illustration}
+              img={activeImgIdx + 1}
+            />
           </div>
         </div>
       </div>

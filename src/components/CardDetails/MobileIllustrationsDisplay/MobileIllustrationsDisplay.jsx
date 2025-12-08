@@ -31,7 +31,11 @@ const MobileIllustrationsDisplay = ({ storyDetails }) => {
                 }
               />
               <div className={styles.download}>
-                <Download heading={storyDetails.heading} img={order} />
+                <Download
+                  heading={storyDetails.id}
+                  illustration={storyDetails.illustration}
+                  img={order}
+                />
               </div>
             </div>
           </Fragment>
