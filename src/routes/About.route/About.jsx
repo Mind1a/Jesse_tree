@@ -1,14 +1,12 @@
+import { useTranslation } from "react-i18next"
 import styles from "./About.module.scss"
 
 const About = () => {
+  const { t, i18n } = useTranslation()
+
   return (
     <main className={styles.main}>
-      <p>
-        This website is a collaborative effort between two friends, a theologian
-        and an illustrator. The idea of creating a website that would house
-        Christian-themed educational resources was developed gradually,
-        following a series of discussions and exchanges of ideas.
-      </p>
+      <p lang={i18n.resolvedLanguage}>{t("about.text")}</p>
     </main>
   )
 }

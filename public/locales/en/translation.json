@@ -12,7 +12,7 @@
       "p1": "Christmas is a special time. Every year, we celebrate the birth of our Lord, God, and Savior Jesus Christ. After the fall of Adam and Eve, the people of God were waiting for the Messiah, the chosen one, who would become the king of Israel and lead them. For many years, God prepared His faithful to welcome the Messiah, and one night, in a place called Bethlehem, the promised one, Christ was born.",
       "p2": "The whole story of the Old Testament is about preparation to meet Jesus. The narratives of Abraham, Isaac, Jacob, and Joseph tell us something about Christ. On this website, you can prepare to meet baby Jesus on the day of His birth."
     },
-    "more": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt excepturi maiores deleniti inventore iure dolor! Architecto omnis..."
+    "more": "The \"Jesse Tree\" is a visual and devotional tool used during Advent to help people understand the biblical narrative leading up to the birth of Jesus Christ..."
   },
   "footer": {
     "links": [
@@ -22,11 +22,23 @@
       "Buy This Book"
     ]
   },
+  "about": {
+    "text": "This website is a collaborative effort between two friends, a theologian and an illustrator. The idea of creating a website that would house Christian-themed educational resources was developed gradually, following a series of discussions and exchanges of ideas."
+  },
+  "educators": {
+    "paragraphs": [
+      "This resource is structured for children of elementary school age. It intends to help children to think about Christ during the celebration of Christmas.",
+      "The materials are divided into six weeks. Each week, the students hear passages from the Old Testament and try to connect them with the person of Christ. Using short Hymnography texts, the educators will try to link the passages of the OT with the reality of Christian tradition.",
+      "The resource can work in different settings. Church school educators can use it for weekly sessions during Advent. It is recommended that the students read the passages appointed for the following session during the week and prepare for the meetings by spending a few minutes a day with their parents, reading a few verses from the scripture. But if it’s impossible, the educator can tell the biblical stories during the session. If the church school is equipped with a monitor or a projector, the resource could be used in digital form, but if the educator doesn’t have proper technologies or prefers to plan the sessions without using any electronics, the illustration and the texts could be printed out and then distributed during the class.",
+      "Parents can use our Jesse Tree reading materials at home for weekly or daily sessions with their children.",
+      "Usage of the scriptural texts is up to the educators. In our materials, we included the references to the chapters and verses. The educators can choose the best translation that suits their context or paraphrase to tell the stories."
+    ]
+  },
   "jesse_tree_readings": {
-    "heading": "What is Jesse Tree Readings?",
+    "heading": "Jesse Tree Readings",
     "text": {
-      "p1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt excepturi maiores deleniti inventore iure dolor! Architecto omnis, exercitationem debitis placeat ducimus facilis nihil nostrum porro officia illo accusantium praesentium quasi velit cupiditate magnam laudantium eius ipsum ipsa aliquam ipsam perferendis!",
-      "p2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat odio ut repellat repellendus perferendis corporis quaerat molestiae vel, laboriosam, nostrum sed ipsa optio accusantium magni incidunt. Tempora minus quis nihil dolorem earum laborum error ducimus ad, corporis alias temporibus sed, explicabo repellendus repellat dolore nisi deserunt."
+      "p1": "The \"Jesse Tree\" is a visual and devotional tool used during Advent to help people understand the biblical narrative leading up to the birth of Jesus Christ. It's based on the Old Testament prophecy of Isaiah 11:1, which compares Jesus to a branch growing from the \"root of Jesse\" (Jesse being the father of King David).",
+      "p2": ""
     }
   },
   "not_found": {
