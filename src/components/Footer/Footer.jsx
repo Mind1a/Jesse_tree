@@ -4,6 +4,8 @@ import styles from "./Footer.module.scss"
 const Footer = () => {
   const { t } = useTranslation()
   const links = t("footer.links", { returnObjects: true })
+  const onlineLink = t("footer.onlineLink")
+  const buyLink = t("footer.buyLink")
 
   return (
     <footer className={styles.footer}>
@@ -16,8 +18,12 @@ const Footer = () => {
         </a>
       </div>
       <div>
-        <a href="">{links[2]}</a>
-        <a href="">{links[3]}</a>
+        <a href={onlineLink} target="_blank" rel="noopener noreferrer">
+          {links[2]}
+        </a>
+        <a href={buyLink} target="_blank" rel="noopener noreferrer">
+          {links[3]}
+        </a>
       </div>
     </footer>
   )
